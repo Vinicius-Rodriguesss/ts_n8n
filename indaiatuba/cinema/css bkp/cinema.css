@@ -1,0 +1,104 @@
+/*CONTAINER*/
+	#cinema2 label { width:auto; font-family: 'Open Sans', sans-serif; text-transform:none; padding: 0 0 0 1%; height:0;float:none; background-color:rgba(0,0,0,0); vertical-align:baseline;}
+
+	#cinema2 { color: #fff; font-size: 15px; line-height: 17px; background-color: #f7f7f7; width: 100%;  }
+	#cinema2 h1, #cinema2 h2, #cinema2 h3, #cinema2 h4 { text-transform: uppercase; }
+
+	#cinema2 .cinema_container { clear: both; max-width: 1380px; margin: 0 auto; padding: 78px 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;  }
+	#cinema2 .cinema_titulo { font-size: 77px; line-height: 85px; margin-bottom: 12px; letter-spacing: -4px;}
+	#cinema2 .cinema_sub { text-transform: uppercase; margin-bottom: 44px; }
+	#cinema2 .cor1 { color: #b1795f; }
+	#cinema2 .cor2 { color: #c28b34; }
+
+	#cinema2 .cinema_data { border-top: 1px solid #3d3d3d; border-bottom: 1px solid #3d3d3d; padding: 20px 0px; margin-bottom: 44px; min-height: 70px; }
+	#cinema2 .cinema_data li * { color: #b1795f; }
+	#cinema2 .cinema_data li { display: inline-block; vertical-align:  top; margin-right: 35px; text-align: center; cursor: pointer;}
+	#cinema2 .cinema_data li:hover { opacity: 0.9; }
+	#cinema2 .cinema_data li.active * { color: #b3b3b3 }
+	#cinema2 .cinema_data li h2 { /*font-family: 'Futura-xk';*/ font-size: 30px; line-height: 32px; font-weight: bold; }
+	#cinema2 .cinema_data li span { letter-spacing: 1px; padding-top: 15px; display: block; }
+
+	#cinema2 .cinema_col { display: table; width: 100%;}
+	#cinema2 .cinema_col>div { display: table-cell; vertical-align: top; }
+	#cinema2 .cinema_col>div.cinema_col1 { padding-right: 20px; }
+	#cinema2 .cinema_col>div.cinema_col2 { width: 80%; }
+	#cinema2 .bloco_titulo { text-transform: uppercase; margin-bottom: 25px;}
+	#cinema2 .filtros .bloco_titulo  { margin-bottom: 10px; }
+	
+	#cinema2 .filtros input[type=checkbox] { vertical-align: middle;  margin-top: -2px; }
+	#cinema2 .filtros label { cursor:pointer; line-height: 43px; }
+	#cinema2 .filtros label:hover { opacity: 0.9; }
+
+	#cinema2 .cinema_filmes li { margin-bottom: 20px; border: 1px solid #3d3d3d; width: 100%; display: table; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;   }
+	#cinema2 .cinema_filmes li>* { display: table-cell; height: auto; vertical-align: top; }
+	#cinema2 .cinema_filmes li>img { width: 275px; }
+	#cinema2 .cinema_filmes li>div { padding: 20px; width: 80%; }
+	
+	#cinema2 .filme_head { overflow: hidden; padding-bottom: 20px; border-bottom:1px solid #3d3d3d; margin-bottom: 20px; }
+	#cinema2 .filme_titulo {float: left;}
+	#cinema2 .filme_titulo p { padding-bottom: 10px; }
+	#cinema2 .filme_titulo span { font-size: 15px; line-height: 14px; border-radius: 3px; }
+	#cinema2 .filme_btn { float: right; }
+	#cinema2 .filme_btn p { display: inline-block; vertical-align: top; text-align: center; padding-left: 15px; cursor: pointer; }
+	#cinema2 .filme_censura { padding: 2px; padding-top: 0px; margin-right: 1px; }
+	
+	#cinema2 .censL  { background-color: #208a00; } 
+	#cinema2 .censLivre { background-color: #208a00; } 
+	#cinema2 .cens10 { background-color: #ffc100; }
+	#cinema2 .cens12 { background-color: #ffc100; }
+	#cinema2 .cens14 { background-color: #ff7900; }
+	#cinema2 .cens16 { background-color: #ff7900; }
+	#cinema2 .cens18 { background-color: #111; color: #fff; }
+
+	#cinema2 .filme_horarios>p { margin-bottom: 12px; }
+	#cinema2 .filme_horarios b { font-weight: bold; font-size: 12px; }
+	#cinema2 .fhorario_btn a {margin-bottom: 19px; text-align: center; min-width: 68px; padding: 15px 35px; border:1px solid  #b1795f; color:  #b1795f; display: inline-block; vertical-align: middle; margin-right: 10px; height: 20px;
+    overflow: hidden; }
+	#cinema2 .fhorario_btn a span { padding: 0px; display: block; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
+	#cinema2 .fhorario_btn a span:nth-child(1) { margin-top: -31px; margin-bottom: 16px; text-transform: uppercase; }
+	#cinema2 .fhorario_btn a:hover span:nth-child(1) { margin-top: 0px; }
+	#cinema2 .filme_lang span { min-width: 20px; border-radius: 3px; text-align: center; color: #111; padding: 1px 5px; font-size: 11px; line-height: 13px; background-color: #ff9c00; display: inline-block;   margin-left: 5px; margin-bottom: 10px; }
+	#cinema2 .filme_trailer img { margin-bottom: 6px; }
+
+	.trailer_container { position: fixed; z-index: 999999999; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(64, 64, 64, 0.80); display: none;}
+	.trailer_container .trailer_iframe { width: 60%; margin: 0 auto; padding-bottom: 33.8%; background-color: #000; position: relative; top: 50%; margin-top: -17%;}
+	.trailer_container .trailer_iframe iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+	.close_trailer { position: absolute; right: -1px; top: 0px; z-index: 99999; background-color: #000; padding: 12px; width: 15px; cursor: pointer;}
+
+	/*NOVA COR*/
+	#cinema2 { background-color: #f6f7fb; color: #000; }
+	#cinema2 .cinema_data { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+	#cinema2 .cinema_filmes li { border: 1px solid #ccc; }
+	#cinema2 .filme_head { border-bottom: 1px solid #ccc; }
+	#cinema2 .cinema_data li *,
+	#cinema2 .fhorario_btn a,
+	#cinema2 .cor1 {  color: #505050; }
+	#cinema2 .fhorario_btn a { border: 1px solid #505050; }
+
+@media only screen and (max-width: 1400px){
+	#cinema2 .cinema_container { max-width: 940px; }
+}
+
+@media only screen and (max-width: 950px){
+	#cinema2 .cinema_container { padding-left: 20px; padding-right: 20px; max-width: 500px; margin: 0 auto;} 
+	#cinema2 .cinema_data li { margin-right: 10px; } 
+	#cinema2 .cinema_col>div { display: block; width: 100%; }
+	#cinema2 .cinema_col>div.cinema_col1.filtros { padding-bottom: 30px; }
+	#cinema2 .cinema_col>div.cinema_col1.filtros br { display: none; }
+	#cinema2 .cinema_col>div.cinema_col1.filtros label { margin-right: 15px; }
+	#cinema2 .cinema_col>div.cinema_col2 { width: 100%; }
+	#cinema2 .cinema_filmes li>div { width: 100%;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	#cinema2 .cinema_filmes { max-width: 500px; margin: 0 auto;  }
+	#cinema2 .cinema_filmes li>* { display: block; width: 100%; }
+	#cinema2 .cinema_filmes li>img { width: 100%; }
+	#cinema2 .fhorario_btn span { min-width: initial; padding: 7px 13px;  }
+	#cinema2 .cinema_filmes li { margin-bottom: 40px; }
+	#cinema2 .cinema_data { text-align: center; }
+	.trailer_container .trailer_iframe { width:90%; margin: 0 auto; padding-bottom: 50%; background-color: #000; position: relative; top: 50%; margin-top: -17%;}
+
+}
+
+@media only screen and (max-width: 500px) {
+	#cinema2 .cinema_data li h2 { font-size: 17px;  }
+	#cinema2 .cinema_data li span { font-size: 14px;  }
+}

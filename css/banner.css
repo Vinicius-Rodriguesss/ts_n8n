@@ -1,0 +1,50 @@
+.banner { z-index: 1 !important;width: 93%; padding-bottom: 31.5%; position: relative; height: 0px; overflow: hidden; background-color: #ccc; left: 3.5%;z-index:-1; background-position: center top; background-size: 100%; min-width: 500px;} 
+
+.container_banner { z-index: 1 !important;width: 93%; padding-bottom: 41%;position: relative; height: 0px; overflow: hidden; background-color: #ccc; left: 3.5%;z-index:-1;}
+.banner_home { width:65%;padding-bottom:47%;  background-position: center top; background-size: 100%; min-width: 500px;float:left;}
+.banner_home ul { overflow: hidden; width: 100%; display: none;}
+.banner_home a { position:relative; width: 100%; padding-bottom:100%;float:left; background-position: center top; background-size: 100%; background-repeat: no-repeat;}
+.banner_home a:hover {opacity: 1; }
+.banner_padrao {width:25%;padding:5% 5% 25% 5%;float:left;background-image:url(../img/banner_padrao.jpg);background-size:cover;}
+.banner_padrao p {font-size:34px;text-transform:uppercase;color:#fff;font-weight:600;line-height:42px;}
+.banner_padrao .bt_saibamais {background-color:#fff;color:#005372;font-family:'Din';font-weight:400;text-transform:uppercase;font-size:12px;letter-spacing:3px;padding:4% 10%;display:inline-block;}
+
+.home {padding-bottom:36.9%;}
+
+body.responsivo .banner { padding-bottom: 45%; }
+.banner_nav {  position: absolute;  bottom: 40px; right:70px;}
+#index .banner_nav li {margin: 0 1px;  width: 20px; height: 20px;  cursor: pointer;float: left; list-style: none; }
+#index .banner_nav li:after {content:' '; height:15px;width:15px;background-color:rgba(0,0,0,0.3);position:absolute;bottom:25px;margin-left:-4px;}
+#index .banner_nav li.active:after {background-color:#5eab46;}
+#index .banner_nav li.active {color:#5eab46; }
+
+.banner_left { left: 5%; }
+.banner_right { right: 5%; }
+.banner_left,.banner_right { position: absolute; top: 45%; z-index: 90; cursor: pointer; 
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+	opacity: 0.7;
+	display: none;
+}
+
+.banner_left:hover,.banner_right:hover { opacity: 1; transform:scale(1.1);  } 
+body.responsivo .banner_left, body.responsivo .banner_right { top: 15%; }
+body.responsivo .banner {margin-bottom:0;}
+
+.banner_arrow_left:hover {opacity:0.8;}
+.banner_arrow_right:hover {opacity:0.8;}
+.banner .arrow { background-color: #949077; padding: 15px 7px; width: 30px; }
+.banner .arrow_left { left: 0; position: absolute; }
+.banner .arrow_right { left: 0; position: absolute; }
+.banner_arrow { position: absolute; right: 0; bottom: 0; background-color: #fff; overflow: hidden; padding: 30px 40px; text-align: center; }
+
+.banner_arrow>img { float: left; cursor: pointer; }
+.banner_arrow>img:hover { opacity: 0.5; }
+
+.navbar {width:10%;position:absolute;right:0;bottom:11%;}
+.navbar img {width:100%;float:left;}
+.banner_arrow_left {display:none;position:relative;float:left;width:50%;cursor:pointer;}
+.banner_arrow_left:after {content:'';width:200%;padding-bottom:100%;background-image:url(../img/detalhe_arrow.png);background-size:100%;position:absolute;right:0;top:100%;}
+.banner_arrow_right {display:none;position:relative;float:left;width:50%;cursor:pointer;}

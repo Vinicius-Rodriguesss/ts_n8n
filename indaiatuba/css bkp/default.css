@@ -1,0 +1,655 @@
+html,body { overflow-x: hidden; width: 100%; overflow-y:auto; min-width:420px;  position: relative; color: #000;z-index: 1; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;}
+*{margin:0; padding:0; border:0; outline:0; list-style: none;}
+th,h1,h2,h3,h4,h5,h6 {font-weight:100; text-transform: uppercase;   color: #333; font-family: 'din_black', sans-serif;   }
+a {text-decoration:none; color:#555;}
+a:hover,input[type=submit]:hover,input[type=button]:hover,button:hover{opacity:0.7;filter:alpha(opacity=70);}
+ul,ol{list-style:none;}
+h1 { font-size: 44px; line-height: 50px; }
+h2 { font-size: 22px; line-height: 23px; }
+h3 { font-size: 18px; line-height: 20px; }
+input[type=text],  input[type=file],input[type=password] , select{width: 99.8% ;height:50px; line-height:50px; text-indent:10px; color: #777; font-size: 18px; background-color:#e2e2e2;   margin-bottom: 10px;   padding: 0; font-size: 12px; position: relative;  border:none; border-radius: 30px;}
+select option { background-color: #f0f0f0; padding-top: 10px ;padding-bottom:10px;font-family: 'Open Sans', sans-serif; font-size: 12px; color: #333; }
+textarea { width: 97.5%; height: 100px; resize: vertical;  background-color: transparent; padding-top: 20px;font-family: 'Open Sans', sans-serif; font-size: 12px; padding-left: 2%; border: 1px solid; border-radius: 15px;}
+td {position:relative !important;}
+button {pointer-events:none;}
+input[type=submit] {background-color:#fff;font-size:16px;font-family:'din_black', sans-serif;text-transform:uppercase;padding:10px 30px;border-radius:20px;float:right;cursor:pointer;}
+
+/*AJUSTES*/
+h1.big    { font-size: 47px; line-height: 68px; letter-spacing: -3px; word-spacing: 12px; }
+.p80      { padding: 80px 0px; }
+.cverde   { color: #86ab55 !important; }
+.green 	  { color:#29a48a; !important }
+.green2   { color:#5eab46 !important; }
+.blue 	  { color:#33616c; }
+.z0       { z-index: 0; }
+.cverde2  { color: #56752e !important; }
+.bgcinza  { background-color: #e8e8e7; }
+.oh       { overflow: hidden; }
+.pr       { position: relative; }
+.ls       { letter-spacing: -3px; }
+.ls2      { letter-spacing: -1px; }
+.justify  { text-align: justify; }
+.tal      { text-align: left; }
+.tar      { text-align: right; }
+.tac      { text-align: center;position:relative;z-index:2; }
+.center   { text-align:center;}
+.fr       { float: right; }
+.fl 	  { float: left; }
+.mt30     { margin-top:30px; }
+.mb50 	  { margin-bottom:50px; }
+.mt0 	  { margin-top:0; }
+.pt10 	  { padding-top:10px !important; }
+.pt50 	  { padding-top:50px !important; }
+.pb50 	  { padding-bottom:50px !important; }
+.white h1, .white p { color: #fff; }
+.wd95 	  { width:95% !important; }
+.wd98	  { width:98.8% !important; }
+.wd100    { width:100% !important; }
+.border input, .border select, .border textarea{ border-color:#c3c3c3;  } 
+*[drop] {  background-image: url(https://upload.madnezz.com.br/f399a440d744044d012cf3f7e2655d41); background-size: 8px; background-repeat: no-repeat; background-position: 94% center; }
+*[drop-input] {  background-image: url(https://upload.madnezz.com.br/cfa310b034da580ee0435c492132baf6); background-size: 8px; background-repeat: no-repeat; background-position: 94% center; }
+.ttn 	  { text-transform:none !important; }
+.fs30 	  {	font-size:30px; }
+
+
+/*HEADER*/
+.geral { width: 100%; height: 100%; position: relative; overflow: hidden; display: none; }
+.header { position: fixed; z-index: 99; width: 100%; }
+.redes_sociais {position:relative;}
+.horario {float:right;height:40px;margin-left:20px;text-align:center;padding:5px 30px 5px 20px;font-family:'news', sans-serif;text-transform:uppercase;font-weight:bold;cursor:pointer;position:relative;}
+.horario:after {content:'';position:absolute;right:5px;top:0;width:20px;height:100%;background-image:url(https://upload.madnezz.com.br/7ff80cd36a6f6e8b107497935eb08315);background-repeat:no-repeat;background-position:right;background-size:50%;}
+.header .green {color:#33626c;}
+.sociais {float:right;}
+.box_horarios {display:none;background-color:#ededed;position:absolute;right:10%;top:50px;padding:30px 30px 30px 50px;z-index:9;text-align:right;}
+.box_horarios span {font-weight:bold;font-size:16px;font-family:'news', sans-serif;text-transform:uppercase;}
+.clear {clear:both;}
+.horario.active {background-color:#ededed;}
+.box_shopping {position:relative;}
+.header .default {overflow:visible;}
+.menu-small {float:right;}
+.menu ul ul {display:none;min-width:120px;float:none;top:60%;left:-20px;padding:0 20px;background-color:#fff;box-shadow:0 10px 10px rgba(0,0,0,0.2);padding-bottom:20px;position:absolute;text-align:left;}
+.menu ul ul li {padding:0;height:40px;}
+.menu ul ul li a {margin:0;color:#133348;}
+.box_shopping:hover .menu ul ul {display:block;}
+
+/*MENU*/
+.redes-sociais {width:90%;height:50px;background-color:#f4f4f4;text-align:right;padding-right:10%;}
+.menu { width: 100%; background-color: #fff; text-align:right; }
+.menu>ul { width:60%;float:right;margin-right:10%;}
+.menu>ul>li{ text-transform: uppercase; height:70px; line-height:70px; text-transform:uppercase; font-size:16px; background-image:url(https://upload.madnezz.com.br/6f30546c187fdd8a7c1bea32fb8615da); font-weight: bold; letter-spacing: 1px;background-repeat:no-repeat; display: inline-block; font-family: 'news', sans-serif; background-position: 100% 47%; margin-right:15px; padding-right: 18px;}
+.li-mobile {display:none !important;}
+.menu>ul>li a{display:block; color:#133348  }
+.menu>ul>li:hover ul{display:block;} 
+.menu .first{margin-left:0;}
+.menu .last{background-image:none; margin-right:0 !important; padding-right: 0px !important;}
+.menu ul ul{ float: left; position:absolute; background-image:url(https://upload.madnezz.com.br/7ff80cd36a6f6e8b107497935eb08315); background-repeat:no-repeat; padding-top:20px; top:120px; z-index:999; display:none; padding: 20px; padding-left: 40px; padding-right: 40px; margin-left: -20px; background: #b31900; color: #fff ; }
+.menu ul ul li a { color: #fff; }
+.menu-small { width: 100%; background-color: #fff; text-align:right; }
+.menu-small>ul { width:60%;float:right;margin-right:10%;margin-top:30px;margin-bottom:-15px;z-index:1;position:relative;}
+.menu-small>ul>li{position: relative; text-transform: uppercase; height:30px; line-height:30px; text-transform:uppercase; font-size:13px; background-image:url(https://upload.madnezz.com.br/6f30546c187fdd8a7c1bea32fb8615da); font-weight: bold; letter-spacing: 1px;background-repeat:no-repeat; display: inline-block; font-family: 'news', sans-serif; background-position: 100% 47%; margin-right:15px; padding-right: 18px;}
+.menu-small>ul>li a{display:block; color:#969696;}
+.menu>-smallul>li:hover ul{display:block;} 
+.menu-small .first{margin-left:0;}
+.menu-small .last{background-image:none; margin-right:0 !important; padding-right: 0px !important;}
+.menu-small ul ul{ float: left; position:absolute; background-image:url(https://upload.madnezz.com.br/7ff80cd36a6f6e8b107497935eb08315); background-repeat:no-repeat; top:20px; left:0; z-index:999; display:none; padding: 20px; background: #b31900; color: #fff ; }
+.menu-small ul ul li a { color: #fff; }
+.menu-small ul ul li { white-space: nowrap; }
+.menu-small ul li:hover ul{display: block;}
+.menu_responsivo {  margin: 10px auto;  width: 40px; display: none;  margin-left: 91%; padding:10px;  margin-top: 0px; background-color: #fff; background-repeat: no-repeat; background-position: center;  background-size: 100%; }
+.header.responsivo .menu_responsivo { display: block !important; }
+.header.responsivo .menu { width: 100%; float: none; height: 0; overflow: hidden;margin-top:60px;}
+.header.responsivo .menu li { width: 100%; display: block; background-image: none; text-align: center; margin: 0; padding: 0; line-height: 45px; height: 45px; font-size: 24px; border-top: 1px solid #E0E0E0; }
+
+/*NOVO MENU*/
+.header { background-color: #fff; }
+.header .default { width: 100%; margin:0; border-bottom:1px solid #eee; }
+.header .menu  {  margin: 0 auto;  }
+.header .logo1 { position: absolute;left: 20px; height: 70px;  top:0;}
+.header .logo2 {  position: absolute;left: 10%; height: 90px;  top:10px; }
+.header.responsivo .menu_responsivo  { position: absolute; right: 0px;  top: 20px; }
+.header.responsivo {  min-width: 420px;}
+body.responsivo  .banner { min-width: 510px;     margin-top: 95px; }
+body.responsivo .banner { width:100%;left:0;top:66px;}
+body.responsivo #shopping .default.content { padding-bottom: 50px; }
+body.responsivo  .bg_secundaria .bg { background-position: center;  }
+
+/* DEFAULT */
+.default { margin: 0 auto; padding: 0; width: 1044px; position: relative; overflow: hidden;z-index:2; }
+/*.default.content { padding: 130px 0px; }*/
+.default.content {padding: 50px 0px;}
+.container { position: relative; width: 100%; overflow: hidden; }
+.box { width: 49.999%; float: left; }
+.box.box_left { clear: both; }  
+/*.conteudo { overflow: initial; margin-top: 18% !important; z-index: 2 !important; position: relative;} */
+.conteudo { overflow: initial;position: relative;margin-top:155px;background-color:#f4f4f4;}
+.bg_cinza {background-color:#f4f4f4;padding:50px 10% 50px 10%;font-size:14px;}
+.bg_branco {background-color:#fff;padding:50px 10% 0;width:80%;font-size:14px;}
+.centro {width:80%;padding:0 10%;}
+.lojas-home {width:100%;height:auto;padding:50px 0;background-color:#f4f4f4;}
+.lojista-home {width:100%;height:auto;padding:50px 0;background-color:#e8e8e8;}
+.faixa { position: relative; background-color: #333;  background-position: center top; background-repeat: no-repeat; background-size: cover;  margin-bottom: -2px; }
+.faixa:before { content: ' '; width: 100px;  left: 35%; height: 5px;   position: absolute; bottom:70px; margin-left: 600px;  }
+.faixa:after { content: ' '; width: 100px;  right: 35%; height: 5px;   position: absolute; bottom:70px; margin-right: 600px;  }
+.faixa.azul:before,.faixa.azul:after { background-color: #33616e; }
+.faixa.verde:before,.faixa.verde:after{ background-color: #33616e; }
+.faixa.verde { background-image: url(https://upload.madnezz.com.br/6dd060c48af15f24eabb7566486b9e93);  }
+.faixa.azul { background-image: url(https://upload.madnezz.com.br/e1b194596d262843f73250954ca94dd7); background-position: center; }
+.col3 { overflow: hidden; }
+.col3>div { width: 100%; float: left;  position: relative;   }
+.col.skew_in { padding: 50px 0px;   }
+.faixa select {-webkit-appearance: none; -moz-appearance: none;   text-overflow: '';}  
+.titulo    { text-align: center; margin: 0 auto; padding: 0 0 50px 0; }
+#index .titulo    { text-align: center; margin: 0 auto;   }
+.titulo h1 { font-size: 40px; line-height: 57px;margin-bottom:20px;}
+.titulo h2 { font-size: 19px; line-height: 19px;text-transform:none;} 
+.titulo *  { color: #33626c; } 
+.titulo h1:before { content: ' '; width: 100px; height: 5px; position: absolute; margin-left: -140px; margin-top:25px; background-color:#33626c;  }
+.titulo h1:after { content: ' '; width: 100px; height: 5px; position: absolute; margin-left: 40px; margin-top:25px; background-color:#33626c;   }
+.mini_font { font-size: 11px; line-height: 17px; text-transform: uppercase; letter-spacing: 14px; }
+
+/*INDEX*/
+.lojas-home ul {width:80%;padding:0 10%;display:flex;}
+.lojas-home li {margin-right:0.5%;width:100%;cursor:pointer;position:relative;}
+.lojas-home .last {margin-right:0;}
+.lojas-home img {width:100%;height:100%;}
+
+.lojas-home li::after {content:'';width:100%;height:100%;left:0;top:-20%;position:absolute;border:1px solid #093a55;font-size:30px;text-transform:uppercase;padding-top:35%;color:#fff;font-family: 'din_black', sans-serif;text-align:center;pointer-events:none;transition:all 0.3s;opacity:0;}
+.lojas-home li:hover:after {width:80%;height:62%;left:10%;top:-4.5%;transition:all 0.3s;opacity:1;}
+.lojas-home li {transition:all 0.3s;background-color:#204f61;}
+.lojas-home li img:hover {transition:all 0.3s;opacity:0.4;}
+
+.insta_slide li::after {content:'';width:100%;height:100%;left:0;top:-20%;position:absolute;border:1px solid #093a55;font-size:30px;text-transform:uppercase;padding-top:35%;color:#fff;font-family: 'din_black', sans-serif;text-align:center;pointer-events:none;transition:all 0.3s;opacity:0;}
+.insta_slide li:hover:after {width:80%;height:80%;left:10%;top:-8%;transition:all 0.3s;opacity:1;position:absolute;pointer-events:none;}
+.insta_slide li {transition:all 0.3s;background-color:#204f61;}
+.insta_slide li img:hover {transition:all 0.3s;opacity:0.4;}
+
+#index ul .novidade_lista  {margin-top:50px;width:100%;float:left;}
+#index .novidade_lista li {width:33%;float:left;margin-right:0.3%;margin-bottom:50px;text-align:left;}
+#index .novidade_lista li img {max-height:232px;margin-top:50px;}
+#index .info-novidade {padding:2% 5%;}
+.insta_slide{width:180%; margin-bottom:50px;margin-bottom:300px;}
+.insta_slide li{float:left; width:8%; height:0; padding-bottom:8%; margin:1px; position:relative;}
+.insta_slide a { position: absolute; left: 0; top: 0; width: 100%;height: 100%; }
+.insta_slide img{width:100%;/*min-height:205px;max-height:100%; */ height: 100%;}
+
+.filme{ text-align:center;opacity: .9}
+.home_cinema{position:relative; overflow:hidden; background-color: #000;}
+.home_cinema>div{position:relative; width:100%; overflow:hidden; padding: 5%;}
+.home_cinema>div iframe{width:100%;}
+.home_cinema>div>img{position:absolute; top:0; left:0; width:115%;}	
+.opacidade{background: rgba(0,0,0,0.3);display:flex; align-items: center; flex-direction: column; justify-content: center; position: absolute; width: 100%; height: 100%;}
+
+.home_cinema>ul{width:100%; height:0; padding-bottom:28%; background-color: #000; display: flex}
+.home_cinema>div a.to_int { position: absolute;left: 0; top: 0; width: 100%; height: 100%; z-index: 50; }
+.home_trailer {position: absolute !important; left: 0; top: 0 !important; width: 100% !important; height: 100%; z-index: 0; padding: 0 !important; margin: 0 !important; background-color: #000;filter:brightness(0.5);}
+.home_trailer img {width:162%;}
+body.responsivo .home_trailer img {width:175%;}
+.home_trailer>iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index:0; /* opacity: 0.3;*/}
+.home_cinema>div .home_trailer>iframe  { opacity: 1;  }
+.home_cinema img.play_home { position: absolute;z-index: 3; left: auto; right: 20px; top: 41%; width: 10%;  cursor: pointer; display: none; }
+.home_cinema>ul li{position:relative; float:left; width:50%; height:0; padding-bottom:28%; overflow:hidden; text-align:center; cursor:pointer;}
+.home_cinema>ul li>a { position: absolute;left: 0; top: 0; width: 100%;height: 100%; z-index: 15; }
+.home_cinema>ul>li>img{width:115%;}
+.home_cinema>ul div{position:absolute; top:50%; margin-top:-50px; width:100%;}
+.cinema_up{position:absolute; top:0; right:25%; width:50px; height:30px; background-color:#ddd; margin-right:-25px;background-image:url(https://upload.madnezz.com.br/52d300e5da6a0a264e462eebcee3ec0e);background-position:center;cursor:pointer;transition:opacity 100ms;z-index:15;}
+.cinema_down{position:absolute; bottom:0; right:25%; width:50px; height:30px; background-color:#ddd; margin-right:-25px;background-image:url(https://upload.madnezz.com.br/2afea6de9d5ab935dd9c2f567c16d1aa);background-position:center;cursor:pointer;transition:opacity 100ms;z-index:15;}
+.cinema_up:hover, .cinema_down:hover {opacity:0.7;}		
+.home_cinema li>div {position:absolute; top:50%; width:80%; text-align:center; padding:10%;line-height:30px; margin-top:-115px;}		
+.home_cinema h2{position:absolute; top:50%; width:80%; text-align:center; padding:10%;line-height:45px; margin-top:-125px;font-size:45px;color:#fff;}			
+.home_cinema h3 {font-size:27px;color:#fff;line-height:30px;margin-bottom:20px;}
+.home_cinema h4 {font-size:18px;color:#4ccd86;}
+
+.banner_loja {width:60%;padding-bottom:11%;border:1px solid #ccc;margin-left:auto;margin-right:auto;}
+.banner_loja img {position:absolute;width:70%;left:15%;margin-top:1.9%;}
+
+/* SHOOPPING */
+.direita {padding:40px 15% 40px 7%;text-align:left;}
+.esquerda {padding:40px 7% 40px 15%;text-align:right;}
+.item1 {background-image:url(https://upload.madnezz.com.br/9b7541b5b0bef44a595d0563307976ec);background-position:95%;background-repeat:no-repeat;}
+.item2 {background-image:url(https://upload.madnezz.com.br/6104f2a4449d0eb5563febc5aefa330b);background-position:4%;background-repeat:no-repeat;}
+.item3 {background-image:url(https://upload.madnezz.com.br/1decae6973b999280cdf1e4ce41c6743);background-position:95%;background-repeat:no-repeat;}
+.item4 {background-image:url(https://upload.madnezz.com.br/0882aa130fc3a2ecda56a19f91470232);background-position:4%;background-repeat:no-repeat;}
+.item5 {background-image:url(https://upload.madnezz.com.br/5e3db7966633ccae2eff70b06fd8421e);background-position:95%;background-repeat:no-repeat;}
+.item6 {background-image:url(https://upload.madnezz.com.br/04b4dd5fa99c151283e545ed106082d9);background-position:4%;background-repeat:no-repeat;}
+.bg_green1 {background-color:#26a48c;}
+.bg_green2 {background-color:#33616c;}
+.bg_green3 {background-color:#5eab46;}
+#shopping table {width:100%;border:0;font-size:20px;font-family:'din_black', sans-serif;color:#fff;text-transform:uppercase;border-spacing:0;}
+#shopping tr {width:100%;}
+#shopping td {width:48%;}
+ul.galeria {width:100%;display:-webkit-box;}
+.galeria li {width:20%;}
+.galeria img {width:100%;}
+
+ul.loja_lista { width: 100%;  padding-right: 20px; margin: 50px 0;display:block;max-height:200000px;overflow:hidden;}
+ul.loja_lista h2 { color: #678c36; font-size: 25px; text-align:left; padding-left:5%;}
+ul.loja_lista li { padding: 5px 0px; position: relative; overflow: hidden; cursor: pointer; padding-top:0;width:22%; margin-right:4%;background-color:#eee;line-height:10px;float:left;margin-bottom:50px; min-height:630px; }
+ul.loja_lista img { width:100%; }
+ul.loja_lista li:nth-child(4n) { margin-right:0;}
+ul.loja_lista li:nth-child(even) {background-color:#fff;}
+ul.loja_lista li h2:before { content: ' ' ; width: 2000px; height: 1px; background-color: #fff; opacity: 0; position: absolute; right: 120%; top: 48%; }
+ul.loja_lista li h2:after { content: ' ' ; width: 2000px; height: 1px; background-color: #fff; opacity: 0; position: absolute; left: 120%; top: 48%; }
+ul.loja_lista li:hover h2:before { opacity: 0.4; }
+ul.loja_lista li:hover h2:after { opacity: 0.4; }
+ul.loja_lista li:hover h2 { opacity:0.8 }
+.loja_info   { display: none; }
+.loja_info .col:nth-child(1) { margin-top: 144px; }
+.loja_info .col:nth-child(2) { z-index: 9; }
+.loja_info .col:nth-child(3) { padding-bottom: 100px; }
+.loja_inf h2 { color: #6d9c34; font-size: 27px; margin-bottom: 10px; }
+.loja_inf p { text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 20px;}
+.info-lojas p {line-height:20px !important;}
+.bt_loja {width:113px;height:40px;background-image:url(https://upload.madnezz.com.br/776f36aa668fa6d96c1e1bd658aed1a8);background-size:100% 100%;background-color:rgba(0,0,0,0);position:absolute;right:0;cursor:pointer;}
+.bt_busca {width:113px;height:40px;background-image:url(https://upload.madnezz.com.br/abfdaafca932967820b93cbbd17f2bec);background-size:100% 100%;background-color:rgba(0,0,0,0);position:absolute;right:0;cursor:pointer;pointer-events:all !important;}
+button:hover {filter:contrast(0.95);}
+.bt_drop {width:113px;height:40px;background-image:url(https://upload.madnezz.com.br/1fbfe47693dc44ec6bf10f353d913389);background-size:100% 100%;background-color:rgba(0,0,0,0);position:absolute;right:0;cursor:pointer;}
+.bt_drop2 {width:113px;height:40px;background-image:url(https://upload.madnezz.com.br/1fbfe47693dc44ec6bf10f353d913389);background-size:100% 100%;background-color:rgba(0,0,0,0);position:absolute;right:0;cursor:pointer;}
+.bt_loja:hover, .bt_drop:hover, .bt_drop2:hover, .bt_busca:hover{opacity:1;}
+.mais_loja {cursor:pointer;color:#bbb;font-size:30px;margin:50px 0;}
+.mais_loja:hover {color:#ccc;}
+.alfabeto {display:flex;font-family:'din_black', sans-serif;color:#4b4b4b;}
+#loja .faixa {background-color:#f4f4f4;position:relative;}
+#loja input[type=text], select {font-family:'din_black', sans-serif;font-size:16px;text-transform:uppercase;padding:0 2%;height:40px;width:95%;float:left;line-height:40px;}
+#loja .busca_loja select {color:#000;}
+#loja .loja_qtd {font-family:'din_black', sans-serif;color:#678c36;font-size:26px;text-transform:uppercase;}
+#loja table {width:100%;}
+#loja td {width:48%;}
+#loja .faixa li {font-size:35px;text-align:center;height:70px;padding:3% 2.4% 0 1.19%;border-radius:20px;width:0;cursor:pointer;}
+#loja .faixa li:hover {background-color:#fff;color:#2aa78d;}
+#loja .faixa .last {margin-right:0;white-space:nowrap;}
+.info-lojas {text-align:left;padding-left: 5%;}
+.loja_lista span {font-family:'din_black', sans-serif;color:#b1b1b1;font-size:11px!important;}
+.loja_lista p {font-family:'din_black', sans-serif;color:#31636c;font-size:11px!important; text-transform:uppercase;}
+
+/*ALIMENTAÇÃO*/
+#alimentacao .faixa {background-color:#f4f4f4;position:relative;}
+#alimentacao input[type=text], select {font-family:'din_black', sans-serif;font-size:16px;text-transform:uppercase;padding:0 2%;height:40px;width:95%;float:left;line-height:40px;}
+#alimentacao .busca_loja select {color:#000;}
+#alimentacao .loja_qtd {font-family:'din_black', sans-serif;color:#678c36;font-size:26px;text-transform:uppercase;}
+#alimentacao table {width:100%;}
+#alimentacao td {width:48%;}
+#alimentacao .faixa li {font-size:35px;text-align:center;height:70px;padding:3% 2.4% 0 1.19%;border-radius:20px;width:0;cursor:pointer;}
+#alimentacao .faixa li:hover {background-color:#fff;color:#2aa78d;}
+#alimentacao .faixa .last {margin-right:0;white-space:nowrap;}
+
+#loja .icon ,#alimentacao .icon,#servico .icon {display:inline-block; vertical-align:middle; width:25px !important;}
+
+
+/*SERVIÇO*/
+#servico .faixa {background-color:#f4f4f4;position:relative;}
+#servico input[type=text], select {font-family:'din_black', sans-serif;font-size:16px;text-transform:uppercase;padding:0 2%;height:40px;width:95%;float:left;line-height:40px;}
+#servico .busca_loja select {color:#000;}
+#servico .loja_qtd {font-family:'din_black', sans-serif;color:#678c36;font-size:26px;text-transform:uppercase;}
+#servico table {width:100%;}
+#servico td {width:48%;}
+#servico .faixa li {font-size:35px;text-align:center;height:70px;padding:3% 2.7% 0 1.19%;border-radius:20px;width:0;cursor:pointer;}
+#servico .faixa li:hover {background-color:#fff;color:#2aa78d;}
+#servico .faixa .last {margin-right:0;}         
+
+/*CONTATO*/
+#contato div#imagemCaptchaVerify {background-color: #f8f8f8;margin-right: 10px;width:150px;;float: right;height:40px;;border-radius: 10px;overflow: hidden;}
+#contato img#imgCaptcha { width: 100% !important;float:right;margin-right:10px;}
+#txtCaptcha {width:auto; height:39px;padding:0 1%;margin-right:2%;margin-bottom:50px;float:right;}
+input[type=text], select {font-family:'din_black', sans-serif;font-size:16px;text-transform:uppercase;padding:0 2%;height:39px;width:95%;}
+textarea {background-color:#e2e2e2;border:none;border-radius:30px;height:250px;}
+.bt_contato {width:113px;height:41px;background-image:url(https://upload.madnezz.com.br/776f36aa668fa6d96c1e1bd658aed1a8);background-size:100% 100%;background-color:rgba(0,0,0,0);position:relative;float:right;cursor:pointer;}
+table {width:100%;}
+label, td {vertical-align:top;}
+tr {width:100%;}
+body.responsivo div#imagemCaptchaVerify {background-color: #f8f8f8;margin-right: 10px;width: 150px;float: right;height: 77px !important;border-radius: 10px;overflow: hidden;}
+body.responsivo #contato img#imgCaptcha { width: 10% !important;float:right;margin-right:10px;}
+
+/*CINEMA*/
+#cinema_moviecom .faixa {background-color:#f4f4f4;position:relative;}
+#cinema_moviecom .indicacao * { display: inline-block; vertical-align: baseline;  }
+#cinema_moviecom .indicacao p { margin-right: 25px;}
+#cinema_moviecom .cinema_lista h2 { margin-top:0; font-size:32px; }
+#cinema_moviecom .cinema_lista h3 { font-size:24px;margin-right:5px; }
+#cinema_moviecom .cinema_lista { width:80%;margin:50px 10% 100px; }
+#cinema_moviecom .cinema_lista li { width:22%;float:left;margin-right:4%;background-color:#eee;margin-bottom:50px;}
+#cinema_moviecom .info-cinema {padding:8%;min-height:171px;}
+#cinema_moviecom .info-cinema h2 {font-size:24px;}
+#cinema_moviecom .info-filme {width:80%;padding:0 10%;margin-top:20px;}
+#cinema_moviecom .info-filme p {font-family:'Open Sans', sans-serif !important;font-size:12px !important;}
+#cinema_moviecom .horarios {background-color:#999;color:#fff;text-transform:uppercase;padding:10px 20px;font-family:'din_black';text-align:center;font-size:18px;}
+#cinema_moviecom .horarios a {color:#fff;}
+#cinema_moviecom .cinema_lista p {font-family:'din_black', sans-serif;color:#666;font-size:16px;}
+#cinema_moviecom .cinema_lista li:nth-child(4n) { margin-right:0; }
+#cinema_moviecom .cinema_lista img { width:100%;}
+#cinema_moviecom .iframe { width: 100%;  padding-bottom: 30%; margin-bottom: 20px;  background-color: #000; position: relative; height: 0px; background-position:center; background-size:cover;}
+#cinema_moviecom .iframe iframe { position: absolute; left: 0; top: 0; width: 100%; height: 100%;   }
+#cinema_moviecom select {float:none;width:40%;}
+#cinema_moviecom .bt_drop {right:34%;}
+input[type=text] {width:40%;}
+#cinema_moviecom .bt_busca {width:113px;height:40px;right:28%;top:0;}
+#cinema_moviecom .bg_branco {width:100%; padding:0; }
+.play {cursor:pointer; position:absolute; top:36%; left:48%; width:84px; height:84px; background-image:url(https://upload.madnezz.com.br/420c2d4de30c6177a02ae9bcbafe6b8b);}
+#cinema_moviecom .cinema_lista img:nth-child(even) {filter:brightness(0.5);}
+.icon-cinema {width:60px;}
+
+@media only screen and (max-width:1300px){
+	
+}
+
+
+/*LOCALIZAÇÃO*/
+#localizacao .bt {margin-bottom: -85px;}
+.mapa {background-color:#f4f4f4;}
+.mapa input[type=text] {background-color:#e2e2e2;border:none;font-family:'din_black', sans-serif;font-size:16px;text-transform:uppercase;padding:0 2%;width:96%;height:39px;}
+.titulo h1{margin:0 !important;}
+.bt_mapa {width:113px;height:41px;background-image:url(https://upload.madnezz.com.br/776f36aa668fa6d96c1e1bd658aed1a8);background-size:100% 100%;background-color:rgba(0,0,0,0);position:absolute;right:0;top:0;cursor:pointer;pointer-events:all !important;}
+.map:after {content: ' '; width: 100%; height:100%;background-image:url(https://upload.madnezz.com.br/7e65b22324d87070c4834d0534c1c153);background-size:100%;background-position:top;background-repeat:no-repeat;z-index:2;position:absolute;top:0;opacity:0.4;margin-bottom:100px; }
+.map{overflow:hidden; height:700px;margin-top:-5px; position:relative;}
+#mapa{height:700px;margin-top:0;}
+#rota table { width: 100%; font-size: 15px;font-family:'news', sans-serif;}
+#rota {padding:2% 10%;}
+.border h1 { font-size: 36px; letter-spacing: -2px }
+.back_mapa { background-color: #e8e8e7;position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: -1 !important;}
+.faixa { position: absolute;left: 0;top: 0;height: 100%;width: 100%;z-index: 1 !important;}
+
+/*OPORTUNIDADE*/
+.vagas_lista {margin:50px 0;}
+.vagas {width:45%;float:left;padding:1.9%;margin-bottom:2%;height:340px;text-align:left;}
+.vagas:nth-child(1) {background-color:#eee;border:0;margin-right:2%;}
+.vagas:nth-child(2) {background-color:#fff;border:1px solid #ccc;margin-right:0;}
+.vagas:nth-child(3) {background-color:#fff;border:1px solid #ccc;margin-right:2%;}
+.vagas:nth-child(4) {background-color:#eee;border:0;margin-right:0;}
+.vagas:nth-child(5) {background-color:#eee;border:0;margin-right:2%;}
+.vagas:nth-child(6) {background-color:#fff;border:1px solid #ccc;margin-right:0;}
+.vagas:nth-child(7) {background-color:#fff;border:1px solid #ccc;margin-right:2%;}
+.vagas:nth-child(8) {background-color:#eee;border:0;margin-right:0;}
+.vagas:nth-child(9) {background-color:#eee;border:0;margin-right:2%;}
+.vagas:nth-child(10) {background-color:#fff;border:1px solid #ccc;margin-right:0;}
+.vagas:nth-child(11) {background-color:#fff;border:1px solid #ccc;margin-right:2%;}
+.vagas:nth-child(12) {background-color:#eee;border:0;margin-right:0;}
+.vagas:nth-child(13) {background-color:#eee;border:0;margin-right:2%;}
+.vagas:nth-child(14) {background-color:#fff;border:1px solid #ccc;margin-right:0;}
+.vagas:nth-child(15) {background-color:#fff;border:1px solid #ccc;margin-right:2%;}
+.vagas:nth-child(16) {background-color:#eee;border:0;margin-right:0;}
+.vagas:nth-child(17) {background-color:#eee;border:0;margin-right:2%;}
+.vagas:nth-child(18) {background-color:#fff;border:1px solid #ccc;margin-right:0;}
+.vagas:nth-child(19) {background-color:#fff;border:1px solid #ccc;margin-right:2%;}
+.vagas:nth-child(20) {background-color:#eee;border:0;margin-right:0;}
+.vagas h2 {font-size:42px;padding-bottom:20px;}
+.vagas h3 {font-size:20px;padding-bottom:40px;}
+.vagas p {height:200px;overflow:auto;padding-right:20px;}
+select {padding-left:10px;}
+label {width:94%;font-family:'din_black', sans-serif;text-transform:uppercase;padding:0 2% 0 3%;height:39px;float:right;background-color:#e2e2e2; font-size: 16px;border:none; border-radius: 30px;line-height:39px;color:#777;}
+input[type=file] {display:none;}
+#oportunidade td {width:45%;position:relative;}
+.bt_anexo {background-color:#fff;padding:10px 60px;font-size:16px;text-transform:uppercase;font-family:'din_black', sans-serif;border-radius:20px;position:absolute;right:0;letter-spacing:5px;color:#999;}
+
+/*NOVIDADE*/
+#novidade h2.novidade_qtd {margin-top:0;}
+#novidade .novidade_lista li {float:left; width:32%; margin-right:2%; height: 488px; margin-bottom:50px;}
+#novidade .novidade_lista li:nth-child(3n) {margin-right:0;}
+#novidade .novidade_lista li.active{width:100%; height:auto !important;background-color:#fff !important;}
+#novidade .img-close img {width:100%;}
+#novidade .img-close {display:block!important;}
+#novidade .img-open {display:none!important;}
+#novidade .active .img-close {display:none!important;}
+#novidade .active .img-open {display:block!important;text-align:center;}
+#novidade .info-novidade {width:90%;padding:5%;padding-bottom:90% !important}
+#novidade .info-novidade h3 {text-transform:none;}
+#novidade li.active .info-novidade {background-color:#eee;margin-top:-6px;width:80%;padding:4% 10% !important;}
+#novidade .bg_branco.active {width:100%;padding:50px 0 0;}
+#novidade .novidade_lista li div{height:0; padding-bottom:47%; overflow:hidden;}
+#novidade .novidade_lista li.active div{height:auto; padding-bottom:0;}
+#novidade .leia_mais{cursor:pointer;}
+#novidade .texto_completo{display:none;}
+#novidade .novidade_lista li.active {text-align:justify;}
+#novidade .novidade_lista li.active img {width:auto;margin-left:auto;margin-right:auto;}
+#novidade .novidade_lista li.active .texto_resumido{display:none;}
+#novidade .novidade_lista li.active .texto_completo{display:block;padding-bottom:50px;}		
+#novidade .novidade_lista li:nth-child(even) {background-color:#eee;}
+.voltar a{font-family:'din_black', sans-serif;font-size:22px;color:#5eab46;position:absolute;right:10%;bottom:3%;}
+body.responsivo .voltar a {bottom:30px;}
+.novidade_lista li .info-novidade img {display:none;}
+.novidade_lista li .voltar {display:none;}
+.novidade_lista li.active .info-novidade img {display:block;}
+.novidade_lista li.active .voltar {display:block;}
+
+
+.instagram {padding-bottom:10vh;}
+
+.galeria ul {margin:3vh 0 0;}
+.galeria li {transition:all ease 0.3s;height:28vh;background-size:cover;margin-right:0!important;position: relative}
+.galeria li .info {position:absolute;top:0;left:0;width:100%;height:100%;background:#204f61;pointer-events:none;opacity:0;transition:all ease 0.3s;}
+.galeria li .info h2 {color:#fff;position:absolute;width:100%;box-sizing:border-box;padding:0 20px;bottom:35px;left:0;text-align:center;}
+.galeria li:hover .info {opacity:1;}
+.galeria li a {position:absolute;top:0;left:0;width:100%;height:100%;}
+.galeria:after {display:none;}
+.subtitulo-instagram h2 {color:#000;width:auto;}
+.subtitulo-instagram h2:before {display:none;}
+.subtitulo-instagram p {letter-spacing:3px;}
+
+/*FOOTER*/
+.footer { position: relative;  z-index: 3;  padding-bottom: 20px;  background-repeat: no-repeat; padding-bottom: 20px;  }
+.footer form { overflow: hidden;  }
+.footer form  p  {  float: left; width: 175px; margin-right: 10px; }
+.footer form input[type=text],.footer form input[type=password] { width:250px;text-align:left; margin:10px 0; padding-left:20px; height: 40px; line-height: 40px; border-radius: 30px; border:none; background-color:#e2e2e2;text-transform:uppercase;}
+.footer form #email {padding-right:80px;width:190px;}
+.footer form label { position: absolute; top: 11px;  margin-left: 15px;  color: #8a8a8a;}
+.footer .sociais * { vertical-align: middle; display: inline-block;  }
+.madnezz {color:#a9a9a9;text-decoration:underline;text-align:center;}		
+.footer-header {width:100%;text-align:center;background-color:#fafafa;}
+.footer {background-color:#f4f4f4;}
+.footer .newsletter input[type=submit] {clear:none !important;padding:14px 10px;margin-right:0;background-color:#fff;color:#272727;cursor:pointer;position:absolute;right:200px;top:82px;width:100px;border-radius:30px;text-transform:uppercase;font-size:12px;}	
+.footer .newsletter input[type=submit]:hover {opacity:1 !important;}
+.footer ul {display:flex;width:60%;margin-left:auto;margin-right:auto;}
+
+
+/*  --------------------------------------------------------- RESPONSIVO --------------------------------------------------------------------------  */ 
+body.responsivo .menu>ul>li a {display:inline-block;margin:0 8px;}
+body.responsivo p {font-size:14px;}
+body.responsivo .menu>ul {width:100%;float:none;margin-top:10%;margin-right:0;}
+body.responsivo .li-mobile {display:block !important;}
+body.responsivo .esconde-mobile {display:none;}
+body.responsivo .header .logo2 {position:absolute;left:0;height:auto;top:10px;width:192px;}
+
+body.responsivo .box { width: 100%; float: none; }
+body.responsivo .default { width: 90%; margin-left: 5%; min-height:110px;}
+body.responsivo .col3 .col { width: 70%; margin: 0 auto !important; float: none; }
+body.responsivo .col3 { padding: 50px 0px; margin:0 auto; }
+body.responsivo .col3 .lista_img, 
+body.responsivo .col3 .lista_v_img { margin: 30px auto; }
+body.responsivo .col3 p, 
+body.responsivo .col3 h1, 
+body.responsivo .col3 h2 { text-align: center; } 
+body.responsivo .home_novidade .novidade_info p { margin: 0 auto;  }
+body.responsivo .titulo h1 {  font-size: 35px !important; max-width:60%;line-height: 50px !important; margin:0 auto !important; }
+body.responsivo .back_lista { width: 50%; margin: 30px auto;}
+body.responsivo .mform input,
+body.responsivo .mform select { width: 100%;  }
+body.responsivo .footer form.newsletter { width: 100% !important; margin-bottom: -20px; }
+body.responsivo .footer form.newsletter * {text-align: center; }
+body.responsivo .footer form.newsletter .mini_font { width: 100%; text-align: right !important; }
+body.responsivo .footer .rig  { padding-top: 30px;}
+body.responsivo .footer .step1,
+body.responsivo .footer .step2 { float: right !important; }
+body.responsivo .footer form.newsletter input[type=text] { text-align: left !important; }
+body.responsivo .footer .default { overflow: initial; clear: both; }
+body.responsivo .footer p {font-size:14px;}
+ 
+/*.footer .sociais h2 { margin-right: 10px;  }*/
+.footer .imgCaptcha {  width: 175px; }
+.footer .step1 {/* margin-right: -8px;*/  }
+.footer .step2 .captcha { float: left; margin-right: 3px; }
+.footer .step2  p { margin-right: 0px; }
+.footer .step2 .captcha * { display: inline-block; float: left; margin-bottom: 5px; }
+.footer .step2>*{ float: right; clear: both;  }
+.footer .newsletter p.pr { width: 160px; }
+.footer .newsletter input[type=submit] { float: left ; clear: none !important;padding: 13px 10px;right:200px; }
+.footer .step2 p { width: 82px; margin-right: 6px; }
+.footer .step2 p input[type=text] { text-indent: 10px; }
+.footer h1 {font-size:22px;}
+.footer .novidades {font-size:20px;}
+
+/* INDEX */
+body.responsivo #index .novidade_lista li {width:100%;margin-right:0;margin-bottom:0;height:auto !important;}
+body.responsivo #index .novidade_lista li:nth-child(3) {margin-bottom:50px;}
+body.responsivo .banner_nav {bottom:10px;right:20px;}
+body.responsivo #index .novidade_lista li div {padding-bottom:2%;}
+body.responsivo #index .info-novidade {padding-bottom:0 !important;}
+body.responsivo #index .home_cinema h2 {font-size:24px;line-height:24px;}
+body.responsivo #index .home_cinema h3 {font-size:18px;line-height:18px;}
+body.responsivo .filme{ height: 40vh!important;  position:relative!important}
+body.responsivo .opacidade{  }
+
+
+body.responsivo #index .home_cinema>ul {padding-bottom:50%;}
+body.responsivo #index .home_cinema>ul li {padding-bottom:60%;}
+body.responsivo #index .home_cinema>ul>li>img {width:300%;}
+body.responsivo #index .cinema_up {top:54.6%;right:50%;}
+body.responsivo #index .cinema_down {right:50%;}
+body.responsivo .home_cinema>div,body.responsivo .home_cinema>ul{width:100%;}
+body.responsivo #index .novidade_lista li#index .novidade_lista li {width:100%;}
+body.responsivo #index .insta_slide{width:3000px;}
+body.responsivo li.alimentacao:hover:after {font-size:18px;}
+body.responsivo li.loja:hover:after {font-size:18px;}
+body.responsivo li.servico:hover:after {font-size:18px;}
+body.responsivo .desc_alimentacao {top:55%;}
+body.responsivo .desc_loja {top:55%;}
+body.responsivo .desc_servico {top:55%;}
+body.responsivo .desc_alimentacao h2 {font-size:16px;}
+body.responsivo .desc_alimentacao h3 {font-size:11px;padding:10px;}
+body.responsivo .desc_loja h2 {font-size:16px;}
+body.responsivo .desc_loja h3 {font-size:11px;padding:10px;}
+body.responsivo .desc_servico h2 {font-size:16px;}
+body.responsivo .desc_servico h3 {font-size:11px;padding:10px;}
+body.responsivo .banner_loja {width:70%;padding-bottom:13.5%;border:1px solid #ccc;margin-left:auto;margin-right:auto;}
+body.responsivo .banner_loja img {position:absolute;width:90%;left:5%;margin-top:1.9%;}
+body.responsivo ul.loja_lista h2 {position:relative;bottom:0;}
+body.responsivo .info-lojas {position:relative;}
+
+/* OPORTUNIDADES */
+body.responsivo .vagas {width:87% !important;margin:20px 0;background-color:#eee !important;border:0;padding:7%;}
+body.responsivo .vagas:nth-child(even) {background-color:#fff !important; border:1px solid #ccc;} 
+body.responsivo #oportunidade td {width:100%;float:left;}
+body.responsivo .bt_anexo {padding:10px 20px;}
+body.responsivo input[type=submit] {margin-top:10px;}
+body.responsivo #oportunidade .bt_drop2 {width:90px;}
+
+/* LOJAS */
+body.responsivo ul.loja_lista { width:150%;margin:50px -14%;display:block;height:auto;min-height:auto;max-height:200000px; }
+body.responsivo ul.loja_lista li {float:left;margin:5%;height:auto;width:35%;background-color:#eee;min-height:500px;padding-bottom:30px;}
+body.responsivo ul.loja_lista li:nth-child(odd) {margin-right:0; clear: both;}
+body.responsivo .col .loja_inf { width: 100% !important; margin-top: 20px;  } 
+
+/* SHOPPING */
+body.responsivo .galeria li {width:33.33%;} 
+
+
+/* CINEMA */
+body.responsivo #cinema_moviecom .iframe {padding-bottom:60%;}
+body.responsivo .play {top:38%;left:45%;width:12%;height:20%;background-size:100%;background-repeat:no-repeat;}
+body.responsivo #cinema_moviecom .indicacao p { margin-right:0;}
+body.responsivo #cinema_moviecom .info-cinema h2 {font-size:20px;line-height:23px !important;}
+body.responsivo #cinema_moviecom .cinema_lista li {width:48%;}
+body.responsivo #cinema_moviecom .cinema_lista li:nth-child(2n) {margin-right:0;}
+body.responsivo #cinema_moviecom .cinema_lista h2 {padding:0 5%;line-height:32px;}
+body.responsivo #cinema_moviecom select {width:100%;}
+body.responsivo #cinema_moviecom .bt_drop {right:10%;}
+
+/* NOVIDADES */
+body.responsivo .novidade_lista li {width:100% !important;/*height:520px !important;*/}
+body.responsivo .info-novidade {padding-bottom:150% !important;}
+body.responsivo .novidade_lista li div {padding-bottom:70%;}
+body.responsivo .default.content {padding:0;}
+body.responsivo .novidade_lista li.active {width:100%;height:auto;}
+body.responsivo .novidade_lista li.active img {width:100% !important;margin-left:0 !important;margin-bottom:20px;}
+body.responsivo #novidade .novidade_lista li.active .info-novidade {padding:5% 10% !important;margin-top:-30px}
+body.responsivo .novidade_lista li.active div {padding-bottom:0;}
+body.responsivo h2.novidade_qtd {margin-bottom:30px;}
+body.responsivo #novidade .wd100 {width:90% !important;}
+body.responsivo #novidade .novidade_lista li:nth-child(odd) {background-color:#eee;}
+body.responsivo #novidade .novidade_lista li:nth-child(even) {background-color:#fff;}
+
+/* CONTATO */
+body.responsivo #contato #txtCaptcha {width:98%;margin-right:0;}
+body.responsivo #contato img#imgCaptcha {width:40% !important;position:absolute;bottom:4.5%;left:25%;}
+body.responsivo #contato input[type=submit] {position:absolute;bottom:5%;right:10%;}
+body.responsivo .contato_alerta {margin-bottom:20px;}
+
+/* AJUSTES MOBILE */
+body.responsivo .geral {display: block; }
+body.responsivo .banner.home { margin-top: 89px;padding-bottom:47%; }
+body.responsivo .conteudo {margin-top:60px;margin-bottom:20px;}
+
+body.responsivo .home_cinema .fr { width: 100%; }
+body.responsivo .home_novidade .col:nth-child(3) { padding-bottom: 20px; }
+body.responsivo .home_novidade2 { padding-bottom: 0px; }
+body.responsivo .lojas-home ul {width:100%; padding:0;}
+
+body.responsivo .titulo .mini_font { font-size: 15px; letter-spacing:3px !important;margin-top:15px; }
+
+body[pagina=novidade].responsivo .novidade_info .justify { text-align: justify; }
+body.responsivo h1.big { font-size: 50px; line-height: 53px; letter-spacing: -1px; word-spacing: 12px;}
+body[pagina=imprensa].responsivo select.mes,
+body[pagina=imprensa].responsivo select.ano { width: 77% !important  }
+body.responsivo #localizacao .bt { margin-bottom: 0px; }
+body[pagina=lojista].responsivo form { padding: 0 !important; margin-top: -20px; }
+body.responsivo #contato .default.content { padding: 100px 0px; }
+body.responsivo .mini_font {  font-weight: 100;  font-size: 12px; line-height: 16px;}
+body.safari.responsivo .mini_font {  font-weight: 100; }
+
+body.responsivo .banner {background-position:left;}
+body.responsivo .banner a { background-size: 100%; }
+body.responsivo { -webkit-text-size-adjust: 100% !important; }
+body.responsivo .busca_loja input[type=text] { margin-bottom: 0px; }
+body.responsivo .banner_right { right: 4%; }
+body.responsivo .banner_left { left: 4%; }
+
+body[pagina=localizacao].responsivo .banner {padding-bottom:35%;top:66px;}
+
+body.responsivo #loja td {width:100%;float:left;}
+body.responsivo #loja .loja_qtd {font-size:30px;line-height:40px;margin-top:50px;}
+body.responsivo .bt_busca {right:0 !important;}
+body.responsivo .alfabeto {width:108%;min-height:250px;margin:30px 0;display:block;}
+body.responsivo #loja .faixa li {text-align:center;height:70px;width:10%;float:left;}
+
+body.responsivo #alimentacao td {width:100%;float:left;}
+body.responsivo #alimentacao .loja_qtd {font-size:30px;line-height:40px;margin-top:50px;}
+body.responsivo #alimentacao .faixa li {text-align:center;height:70px;width:10%;float:left;}
+
+body.responsivo #servico td {width:100%;float:left;}
+body.responsivo #servico .loja_qtd {font-size:30px;line-height:40px;margin-top:50px;}
+body.responsivo #servico .faixa li {text-align:center;height:70px;width:10%;float:left;}
+
+body.responsivo input[type=text], select {width:95%;}
+body.responsivo .centro {width:100%;margin-bottom:10%;}
+
+body.responsivo #novidade td {width:100%;float:left;}
+
+body.responsivo .item1 {background-position:50% 20%;}
+body.responsivo .item2 {background-position:50% 20%;}
+body.responsivo .item3 {background-position:50% 20%;}
+body.responsivo .item4 {background-position:50% 20%;}
+body.responsivo .item5 {background-position:50% 20%;}
+body.responsivo .item6 {background-position:50% 20%;}
+body.responsivo .esquerda {padding:30% 5% 10% 5%;text-align:center;}
+body.responsivo .direita {padding:30% 5% 10% 5%;text-align:center;}
+
+body.responsivo .bg_cinza {}
+
+body.responsivo .footer ul {display:flex;width:100%;font-size:14px;margin-left:auto;margin-right:auto;}
+body.responsivo .footer ul li{width:50%;}
+body.responsivo .footer form input[type=text] {width:90%;}
+body.responsivo .footer .newsletter input[type=submit] {position:relative;right:-39%;top:auto;margin:20px 0 30px 0;}
+
+
+@media only screen and (max-width:1500px){
+	ul.loja_lista li {min-height:580px; margin-bottom:70px;}	
+}
+
+
+/*POP-UP*/
+
+#sal_popup_js_master_foreground_container { z-index:999999 !important; }
+.sal_popup_js_element img { min-height:200px !important; margin-top:15px !important; }
+	
+@media (min-width: 300px) and (orientation: portrait){
+	.sal_popup_js_element { position:realtive; }
+	.sal_popup_js_element img { max-width:80% !important; position:absolute !important; top:5% !important; margin-left: -40% !important;}
+	.close { top:4% !important; right:5% !important; }
+}

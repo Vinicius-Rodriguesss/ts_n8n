@@ -1,0 +1,207 @@
+[
+    {
+        "name": "Trabalhe conosco",
+        "old": ["https://sal.madnezz.com.br/api/", "https://sal.madnezz.com.br/json/trabalheconosco_json.asp"],
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/oportunidade"
+    },
+    {
+        "name": "Lojas",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/loja"
+    },
+    {
+        "name": "Teatro Ingresso Para Todos",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/teatro/ingresso-para-todos"
+    },
+    {
+        "name": "Banner v3",
+        "old": "https://v3.madnezz.com.br/systems/sites/api/banner.php",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/banner"
+    },
+    {
+        "name": "Banner",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/banner"
+    },
+    {
+        "name": "Banner Secundaria",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/secundaria"
+    },
+    {
+        "name": "Novidades V3",
+        "old": "https://v3.madnezz.com.br/systems/sites/api/novidade.php",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/novidade"
+    },
+    {
+        "name": "Novidades",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/novidade"
+    },
+    {
+        "name": "Sugestao",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/emailmarketing/sugestao"
+    },
+    {
+        "name": "Site evento",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/json/site_evento.php"
+    },
+    {
+        "name": "Site evento actions",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/actions/site_evento.php"
+    },
+    {
+        "name": "Upload Site Novidade",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload/novidade"
+    },
+    {
+        "name": "Upload site",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload"
+    },
+    {
+        "name": "Upload site v3",
+        "old": "",
+        "new": "https://v3.madnezz.com.br/upload/site"
+    },
+    {
+        "name": "Upload site loja",
+        "old": "",
+        "new": "'https://sal.madnezz.com.br/api/site/upload/Loja"
+    },
+    {
+        "name": "Upload site evento",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload/evento"
+    },
+    {
+        "name": "Upload site banner",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload/banner"
+    },
+    {
+        "name": "Upload site banner secundaria",
+        "old": "",
+        "new": "https://sites.madnezz.com.br/api/site/upload/Secundaria"
+    },
+    {
+        "name": "Upload site acontece",
+        "old": "",
+        "new": "https://sites.madnezz.com.br/api/site/upload/Acontece"
+    },
+    {
+        "name": "Upload imprensa",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload/imprensa"
+    },
+    {
+        "name": "Uploads site galeria",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/site/upload/galeria"
+    },
+    {
+        "name": "Cinema",
+        "old": "https://sal.madnezz.com.br/api/site/json/cinema.asp",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cinema"
+    },
+    {
+        "name": "Cinema ingressocom",
+        "old": "https://sal.madnezz.com.br/api/site/json/cinema_ingressocom.asp",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cinema-ingressocom"
+    },
+    {
+        "name": "Cinema Arcoplex",
+        "old": "https://sal.madnezz.com.br/api/site/json/cinema_arcoplex.asp",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cinema/arcoplex"
+    },
+    {
+        "name": "Cinema Venda Bem",
+        "old": "https://sites.madnezz.com.br/api/site/json/cinema_cinemais_vendabem.asp",
+        "new": "https://api-public.madnezz.com.br/public/sites/cinema/vendabem"
+    },
+    {
+        "name": "cinema_cinemark",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cinema-cinemark"
+    },
+    {
+        "name": "busca",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/busca"
+    },
+    {
+        "name": "cep",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cep"
+    },
+    {
+        "name": "contato",
+        "old": "https://sal.madnezz.com.br/api/?do=contato",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/contato"
+    },
+    {
+        "name": "contato_assunto",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/contato/assunto"
+    },
+    {
+        "name": "comercial",
+        "old": "https://sal.madnezz.com.br/api/site/actions/comercial.asp",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/actions/site-comercial"
+    },
+    {
+        "name": "franquia",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/franquia"
+    },
+    {
+        "name": "franquia_actions",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/actions/franquia"
+    },
+    {
+        "name": "vitrine",
+        "old": "https://v3.madnezz.com.br/systems/sites/api/paginas/vitrine.php",
+        "new": "https://api-public.madnezz.com.br/v1/public/sites/vitrine"
+    },
+    {
+        "name": "cupom",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/cupom"
+    },
+    {
+        "name": "cadastro_vagas",
+        "old": "",
+        "new": "https://sal.madnezz.com.br/api/"
+    },
+    {
+        "name": "newsletter",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/emailmarketing/newsletter"
+    },
+    {
+        "name": "metatag_cupom",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/v1/public/sites/cupom"
+    },
+    {
+        "name": "galeria",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/galeria"
+    },
+    {
+        "name": "popup",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/popup"
+    },
+    {
+        "name": "link",
+        "old": "",
+        "new": "https://api-public.madnezz.com.br/api/v1/public/sites/link"
+    }
+]

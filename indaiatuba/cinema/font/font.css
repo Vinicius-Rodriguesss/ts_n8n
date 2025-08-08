@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Gill Sans MT Condensed';
+	src: url('GillSansMT-Condensed.eot');
+	src: url('GillSansMT-Condensed.eot?#iefix') format('embedded-opentype'),
+		url('GillSansMT-Condensed.woff2') format('woff2'),
+		url('GillSansMT-Condensed.woff') format('woff'),
+		url('GillSansMT-Condensed.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-ltcnbt';
+  src: url('FuturaBT-LightCondensed.woff') format('woff'),
+       url('FuturaBT-LightCondensed.ttf') format('truetype'),
+       url('FuturaBT-LightCondensed.svg#FuturaBT-LightCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura-xk';
+	src: url('futurxkc_1-webfont.eot');
+	src: url('futurxkc_1-webfont.eot?#iefix') format('embedded-opentype'),
+		url('futurxkc_1-webfont.woff2') format('woff2'),
+		url('futurxkc_1-webfont.woff') format('woff'),
+		url('futurxkc_1-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

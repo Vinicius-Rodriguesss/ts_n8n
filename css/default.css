@@ -1,0 +1,601 @@
+html,body { overflow-x: hidden; width: 100%; overflow-y:auto; min-width:420px;  position: relative; color: #000;z-index: 1; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px;background-color:#f8f8f8;}
+*{margin:0; padding:0; border:0; outline:0; list-style: none;}
+th,h1,h2,h3,h4,h5,h6 {font-weight:100; text-transform: uppercase;   color: #333; font-family: 'din_black', sans-serif; }
+a {text-decoration:none; color:#555;}
+ul,ol{list-style:none;}
+#busca ol {margin-bottom:30px;}
+h1 { font-size: 44px; line-height: 50px; }
+h2 { font-size: 45px; line-height: 50px; letter-spacing: -2px; }
+h3 { font-size: 22px; line-height: 40px; }
+p {font-family:'Dax Light';font-size:15px;color:#494949;font-weight:600;line-height:24px;}
+td {position:relative !important;}
+b {text-shadow:0 0 #000;}
+.d-flex {display:flex;}
+.w-100 {width:100%;}
+.mw-100 {max-width:100%;}
+
+@font-face {
+    font-family:Dax Light;
+    src: url(../font/dax/dax.ttf);
+}
+
+@font-face {
+    font-family:din_black;
+    src: url(../font/din/DIN-Black.ttf);
+	src: url(../font/din/DIN-Black.eot);
+	src: url(../font/din/DIN-Black.woff);
+	src: url(../font/din/DIN-Black.woff2);
+	src: url(../font/din/DIN-Black.svg);
+}
+
+@font-face {
+    font-family:Din;
+    src: url(../font/din/DINPro-Regular.ttf);
+	src: url(../font/din/DINPro Regular.otf);
+	src: url(../font/din/DINPro-Regular.eot);
+	src: url(../font/din/DINPro-Regular.woff);
+	src: url(../font/din/DINPro-Regular.woff2);
+}
+
+
+/*AJUSTES*/
+.green 	  { color:#02a238 !important }
+.green2   { color:#5eab46 !important; }
+.grey 	  { color:#24ac97 }
+.blue 	  { color:#00374e; }
+.tal      { text-align: left; }
+.tar      { text-align: right; }
+.tac      { text-align: center!important; }
+.taj 	  { text-align:justify!important; }
+.mt30     { margin-top:30px; }
+.mb100 	  { margin-bottom:100px; }
+.mb50 	  { margin-bottom:50px; }
+.mt50 	  { margin-top:50px; }
+.mt100	  { margin-top:100px !important; }
+.mt0 	  { margin-top:0; }
+
+/*HEADER*/
+.geral { width: 100%; height: 100%; position: relative; overflow: hidden; display: none; }
+.header { position:relative; z-index: 99; width: 100%; }
+
+/*MENU*/
+.redes-sociais {width:90%;height:50px;background-color:#f4f4f4;text-align:right;padding-right:10%;}
+.menu {text-align:right; position:relative;}
+.menu>ul>li{ text-transform: uppercase; height:70px; line-height:70px; text-transform:uppercase; font-size:21px;font-weight: bold;background-repeat:no-repeat; display: inline-block; font-family: 'din_black', sans-serif; margin-right:25px; padding-right:25px;position:relative;cursor:pointer;}
+.menu>ul>li:last-child {margin-right:0;padding-right:0;}
+.li-mobile {display:none !important;}
+.menu>ul>li a{display:block; color:#133348;padding-bottom:26px;}
+.menu>ul>li a:hover:after {content:url(../img/detalhe_menu.png);position:absolute;bottom:-40px;left:40%;}
+.menu>ul>li:before {content:'';width:5px;height:5px;background-color:#00a839;position:absolute;left:-30px;top:33px;}
+.menu ul li a:hover {border-bottom:4px solid #00a738;}
+.menu>ul>li:hover ul{display:block;} 
+.menu .first{margin-left:0;}
+.menu li.last {margin-right:30px!important;padding:0;}
+.menu li.last:after {content:'';width:5px;height:5px;background-color:#00a839;position:absolute;right:-26px;top:33px;}
+.menu ul ul{ float: left; position:absolute; background-image:url(../img/arrow_down.png); background-repeat:no-repeat; padding-top:20px; top:120px; z-index:999; display:none; padding: 20px; padding-left: 40px; padding-right: 40px; margin-left: -20px; background: #b31900; color: #fff ; }
+.menu ul ul li a { color: #fff; }
+.menu-small { text-align:right;position:relative;z-index:2; }
+.menu-small ul {float:left;}
+.menu-small>ul>li{ text-transform: uppercase; height:30px; line-height:30px; text-transform:uppercase; font-size:17px; font-weight: bold;display: inline-block; font-family: 'din_black', sans-serif; margin-right:15px; padding-right: 18px;position:relative;}
+.menu-small>ul>li:after {content:'';width:3px;height:16px;background-color:#00a839;position:absolute;right:-4px;top:8px;}
+.menu-small>ul>li:last-child:after {display:none;}
+.menu-small>ul>li a{display:block; color:#00a738;}
+.menu>-smallul>li:hover ul{display:block;} 
+.menu-small .first{margin-left:0;}
+.menu-small .last{background-image:none; margin-right:0 !important; padding-right: 0px !important;}
+.menu-small ul ul{ float: left; position:absolute; background-image:url(../img/arrow_down.png); background-repeat:no-repeat; padding-top:20px; top:120px; z-index:999; display:none; padding: 20px; padding-left: 40px; padding-right: 40px; margin-left: -20px; background: #b31900; color: #fff ; }
+.menu-small ul ul li a { color: #fff; }
+.menu_responsivo {  margin: 10px auto;  width: 40px; display: none;  margin-left: 91%; padding:10px;  margin-top: 0px; background-color: #fff; background-repeat: no-repeat; background-position: center;  background-size: 100%; }
+.header.responsivo .menu_responsivo { display: block !important; }
+.header.responsivo .menu { width: 100%; float: none; height: 0; overflow: hidden;margin-top:60px;}
+.header.responsivo .menu li { width: 100%; display: block; background-image: none; text-align: center; margin: 0; padding: 0; line-height: 45px; height: 45px; font-size: 24px; border-top: 1px solid #E0E0E0; }
+.header form {float:right;}
+.header input[type="text"] {float:right;margin:6px 30px 0 0;font-size:20px;font-family:'din_black';color:#ccc;width:75%;background-color:transparent;border-bottom:1px solid #00a738;opacity:0;}
+.bt_busca {width:21px;height:21px;background-image:url(../img/lupa.png);background-repeat:no-repeat;background-color:transparent;position:absolute;right:0;top:10px;cursor:pointer;}
+ul.solpanamby, ul.shoppings, ul.contatos {right:10%;width:180%;position:absolute;z-index:1;}
+
+/*POP-UP*/
+
+.sal_popup_js_element img { min-height:200px !important;  }
+	
+@media (min-width: 500px) and (orientation: portrait){
+	.sal_popup_js_element { position:realtive; }
+	.sal_popup_js_element img { width:80% !important; position:absolute !important; top:5% !important; left:2% !important;}
+	.close { top:4% !important; right:12% !important; }
+}
+
+
+/*NOVO MENU*/
+.container_menu {width:93%;padding:0 3.5%;}
+.header .default {margin-top:35px;width:auto;float:right;overflow:visible; }
+.header .menu  {  margin: 0 auto;  }
+.header .logo1 { position:relative;float:left;margin:1.5% 0;height:110px;}
+.header.responsivo .menu_responsivo  { position: absolute; right: 0px;  top: 20px; }
+.header.responsivo {  min-width: 420px;}
+
+/* DEFAULT */
+.default { margin: 0 auto; padding: 0; width: 1044px; position: relative; overflow: hidden;z-index:2; }
+.default.content {padding: 50px 0px;}
+.container { position: relative; width: 100%; overflow: hidden; }
+.box { width: 49.999%; float: left; }
+.box.box_left { clear: both; }  
+.conteudo { overflow: initial;position: relative;margin-top:155px;background-color:#fff;width:66%;padding:3% 5%;margin-top:-9.63%;margin-left:12%;z-index:9;}
+.bg_cinza {background-color:#f4f4f4;padding:50px 10% 50px 10%;font-size:14px;}
+.bg_branco {background-color:#fff;padding:50px 10% 0;width:80%;font-size:14px;}
+.centro {width:80%;padding:0 10%;}
+.lojas-home {width:100%;height:auto;padding:50px 0;background-color:#f4f4f4;}
+.lojista-home {width:100%;height:auto;padding:50px 0;background-color:#e8e8e8;}
+.faixa { position: relative; background-color: #333;  background-position: center top; background-repeat: no-repeat; background-size: cover;  margin-bottom: -2px; }
+.faixa:before { content: ' '; width: 100px;  left: 35%; height: 5px;   position: absolute; bottom:70px; margin-left: 600px;  }
+.faixa:after { content: ' '; width: 100px;  right: 35%; height: 5px;   position: absolute; bottom:70px; margin-right: 600px;  }
+.faixa.azul:before,.faixa.azul:after { background-color: #33616e; }
+.faixa.verde:before,.faixa.verde:after{ background-color: #33616e; }
+.faixa.verde { background-image: url(../img/gradient_verde.jpg);  }
+.faixa.azul { background-image: url(../img/gradient_azul.jpg); background-position: center; }
+.col3 { overflow: hidden; }
+.col3>div { width: 100%; float: left;  position: relative;   }
+.col.skew_in { padding: 50px 0px;   }
+.faixa select {-webkit-appearance: none; -moz-appearance: none;   text-overflow: '';}  
+.titulo    { text-align: center; margin: 0 auto; padding: 0 0 50px 0; }
+#index .titulo    { text-align: center; margin: 0 auto;   }
+.titulo h1 { font-size: 40px; line-height: 57px;margin-bottom:20px;}
+.titulo h2 { font-size: 19px; line-height: 19px;text-transform:none;} 
+.titulo *  { color: #33626c; } 
+.titulo h1:before { content: ' '; width: 100px; height: 5px; position: absolute; margin-left: -140px; margin-top:25px; background-color:#33626c;  }
+.titulo h1:after { content: ' '; width: 100px; height: 5px; position: absolute; margin-left: 40px; margin-top:25px; background-color:#33626c;   }
+.mini_font { font-size: 11px; line-height: 17px; text-transform: uppercase; letter-spacing: 14px; }
+
+/*INDEX*/
+.bloco_verde {background-image:url(../img/bloco_verde.jpg);background-size:cover;padding:4% 5%;margin-top:-10%;margin-left:15%;position:relative;z-index:9;text-align:center;max-width:19%;}
+.bloco_verde:before {content:'';width:25%;height:6px;background-color:#fff;position:absolute;top:9%;left:38%;}
+.bloco_verde:after {content:'';width:25%;height:6px;background-color:#fff;position:absolute;bottom:9%;left:38%;}
+.bloco_verde h2 {font-size:40px;color:#fff;font-family:'din_black';word-break:break-word;}
+.bloco_verde h3 {font-size:30px;color:#012c3e;font-family:'Din';font-weight:600;margin-top:20px;}
+.bloco_verde h3 span {font-size:40px;font-weight:bold;}
+
+.titulo_principal {width:100%;background-color:#fff;text-align:center;padding:4% 0 3%;}
+.titulo_principal h1 {font-size:60px;letter-spacing:-4px;position:relative;}
+.titulo_principal h1:before {content:'';width:27%;height:1px;background-color:#ccc;left:0;top:26px;position:absolute;}
+.titulo_principal h1:after {content:'';width:27%;height:1px;background-color:#ccc;right:0;top:26px;position:absolute;}
+.titulo_principal h2 {font-size:20px;letter-spacing:5px;}
+.titulo_principal h3 {font-size:35px;letter-spacing:-2px;}
+
+.novidades_home {width:93%;margin-left:3.5%;}
+.novidades_home h2 {margin-top:0;}
+.novidades_home h3 {line-height:20px;font-size:20px;margin-top:10px;}
+.novidades_home p {color:#989898;font-size:14px;}
+
+.container_mapa {width:70%;margin-left:15%;margin-top:-230px;}
+.mapa {width:45%;position:relative;float:right;}
+.mapa_araraquara {position:absolute;right:50%;top:42%;cursor:pointer;transition:0.2s;width:7%;}
+.mapa_conceicao {position:absolute;right:38%;top:53%;cursor:pointer;transition:0.2s;width:7%;}
+.mapa_indaiatuba {position:absolute;right:43%;top:65%;cursor:pointer;transition:0.2s;width:7%;}
+.mapa_cenesp {position:absolute;right:28%;top:70%;cursor:pointer;transition:0.2s;width:7%;}
+.mapa_araraquara:hover, .mapa_cenesp:hover, .mapa_conceicao:hover, .mapa_indaiatuba:hover {transform:scale(1.1);}
+
+.mapa_araraquara:hover:after {content:'Araraquara';position:absolute;right:120%;top:0;background-color:rgba(0,0,0,0.5);color:#fff;font-family:'Dax Light';padding:5px 10px;border-radius:5px;}
+.mapa_cenesp:hover:after {content:'São\00a0Paulo';position:absolute;right:120%;top:0;background-color:rgba(0,0,0,0.5);color:#fff;font-family:'Dax Light';padding:5px 10px;border-radius:5px;}
+.mapa_conceicao:hover:after {content:'Campinas';position:absolute;right:120%;top:0;background-color:rgba(0,0,0,0.5);color:#fff;font-family:'Dax Light';padding:5px 10px;border-radius:5px;}
+.mapa_indaiatuba:hover:after {content:'Indaiatuba';position:absolute;right:120%;top:0;background-color:rgba(0,0,0,0.5);color:#fff;font-family:'Dax Light';padding:5px 10px;border-radius:5px;}
+
+.descricao_araraquara, .descricao_cenesp, .descricao_conceicao, .descricao_indaiatuba {position:relative;left:20%;width:38%;margin-top:-100px;display:none;}
+
+#index ul .novidade_lista  {margin-top:50px;width:100%;float:left;}
+#index .novidade_lista li {width:32.6%;margin-right:1%;float:left;margin-bottom:50px;text-align:left;}
+#index .novidade_lista li:last-child {margin-right:0;}
+#index .novidade_lista li img {max-height:232px;}
+#index .info-novidade {padding:2% 5% 2% 0;}
+#index .galeria {background-color:transparent;padding:2% 0;}
+
+#index .galeria_araraquara, #index .galeria_cenesp, #index .galeria_conceicao, #index .galeria_indaiatuba {display:none;}
+
+
+/*SHOPPING*/
+#shopping .conteudo {margin-top:-9.63%;padding:0;background-color:transparent;width:75%;}
+#shopping .conteudo .esquerda {width:50%;float:left;background-color:#fff;padding-bottom:5%;}
+#shopping .conteudo .direita {width:50%;float:left;margin-top:12.89%;background-color:#fff;}
+#shopping .conteudo .titulo_texto {background-size:cover;padding:10%;width:80%;margin-bottom:10%;}
+#shopping .conteudo p {padding:0 10%;color:#989898;text-align:justify;}
+#shopping .conteudo h3 {padding:0 10%;line-height:26px;}
+#shopping .conteudo .esquerda .titulo_texto {background-image:url(../img/fundo_titulo_grey.jpg);}
+#shopping .conteudo .direita .titulo_texto {background-image:url(../img/fundo_titulo_green.jpg);}
+#shopping .conteudo .titulo_texto h2 {color:#fff;}
+.table {width:80%;padding:0 10% 10% 10%;}
+.table p {font-family:'din_black';font-size:21px;color:#00a738!important;text-transform:uppercase;text-align:left!important;padding:0!important;}
+.cols1 {width:20%;margin-bottom:50px;float:left;min-height:71px;background-size:65%;background-position:left;background-repeat:no-repeat;}
+.cols2 {width:80%;margin-bottom:50px;float:left;min-height:71px;}
+.galeria {width:100%;background-color:#fff;text-align:center;padding:5% 0;}
+.galeria .fotos {margin:40px 0 70px 0;}
+.galeria .horarios {width:40%;margin:30px auto 10px auto;}
+.galeria .horarios .esquerda {width:47.5%;margin-right:2.5%;float:left;text-align:right;}
+.galeria .horarios .direita {width:47.5%;margin-left:2.5%;float:left;text-align:left;}
+.galeria h1 {font-size:60px;letter-spacing:-4px;position:relative;}
+.galeria h1:before {content:'';width:33%;height:1px;background-color:#ccc;left:0;top:26px;position:absolute;}
+.galeria h1:after {content:'';width:33%;height:1px;background-color:#ccc;right:0;top:26px;position:absolute;}
+.galeria h2 {font-size:20px;letter-spacing:5px;}
+.galeria h3 {font-size:35px;letter-spacing:-2px;}
+.galeria h4 {font-size:18px;}
+.galeria p {color:#919191;text-transform:uppercase;font-size:13px;letter-spacing:1px;line-height:19px;}
+ul.fotos {width:100%;display:-webkit-box;}
+.fotos li {width:20%;}
+.fotos img {width:100%;}
+.news {width:1220px;border-top:1px solid #ccc;margin:0 auto;padding:4% 0;}
+.news .esquerda {width:580px;float:left;margin-right:30px;text-align:right;}
+.news .direita {width:580px;float:left;margin-left:30px;text-align:left;}
+.news .direita a {margin-right:25px;transition:0.2s;}
+.news .direita a:last-child {margin-right:0;}
+.news .direita img {margin-top:20px;}
+.news .direita a:hover {opacity:0.6;}
+.news h3 {font-size:34px;}
+.news input[type="text"] {width:37.5%;float:left;opacity:1;margin:0 4% 0 0;padding:3% 5%;font-size:12px;font-weight:600;font-family:'Dax Light';color:#ccc;border:1px solid #ccc;border-radius:13px;}
+.news input[type="text"]:nth-child(2) {margin:0;}
+.news .form {width:100%;margin-top:5px;}
+.externo {position:relative;display:inline-block;}
+.externo:after {content:'';width:28px;height:24px;background-image:url(../img/externo.png);background-size:100%;background-repeat:no-repeat;position:absolute;right:10%;top:1px;}
+.step1 {position:relative;}
+.news input[type="submit"] {background-color:transparent;position:absolute;right:5%;top:15px;width:20px;height:20px;background-image:url(../img/icon/submit.png);background-repeat:no-repeat;background-position:center;width:20px;height:20px;cursor:pointer;}
+.news h4 {display:inline-block;padding-top:10px;}
+
+/*LINHA DO TEMPO*/
+.list_block {width:100%;float:left;}
+.linha-do-tempo .esquerda {float:left;position:relative;}
+.linha-do-tempo .blue h2 {color:#00374e;margin-left:50px;line-height:80px;}
+.linha-do-tempo .blue h2:before {content:url(../img/bolinha-azul.png);width:43px;height:80px;float:left;position:absolute;left:-20px;}
+.linha-do-tempo .green h2 {color:#00a839;margin-left:50px;line-height:80px;}
+.linha-do-tempo .green h2:before {content:url(../img/bolinha-verde.png);width:43px;height:80px;float:left;position:absolute;left:-20px;}
+.linha-do-tempo .grey h2 {color:#00a38b;margin-left:50px;line-height:80px;}
+.linha-do-tempo .grey h2:before {content:url(../img/bolinha-cinza.png);width:43px;height:80px;float:left;position:absolute;left:-20px;}
+.linha-do-tempo .direita {width:80%;float:left;margin-left:40px;margin-top:25px;}
+.linha-do-tempo .duplo {width:60%;}
+.segmentos {width:100%;margin-top:100px;margin-bottom:50px;}
+.segmentos h2 {font-size:36px;}
+.segmentos .content {width:100%;float:left;margin:1% 0;}
+.segmentos .esquerda {width:45%;padding-left:2.5%;text-align:justify;float:left;}
+.segmentos .direita {width:45%;margin-left:2.5%;float:left;text-align:center;}
+.segmentos .direita img, .segmentos .esquerda img {width:90%;}
+
+/*INSTITUCIONAL*/
+.logos {text-align:center;}
+.logos img {max-width:12%;margin:0 2% 40px 2%;vertical-align:middle;}
+
+/*CONTATO*/
+#contato_form {width:80%;margin:50px auto;float:none;}
+#contato_form input[type="text"] {width:90%;padding:2% 5%;opacity:1;margin:0 0 10px 0;background-color:#f7f7f7;border:0;font-family:'Dax Light';font-weight:600;font-size:16px;}
+#contato_form select {width:100%;padding:2% 5%;opacity:1;margin:5px 0 10px 0;background-color:#f7f7f7;border:0;font-family:'Dax Light';font-weight:600;font-size:16px;}
+#contato_form textarea {width:90%;height:300px;padding:2% 5%;opacity:1;margin:5px 0 10px 0;background-color:#f7f7f7;border:0;font-family:'Dax Light';font-weight:600;font-size:16px;}
+#contato_form input[type="submit"] {background-color:transparent;color:#00a538;font-family:'din_black';text-transform:uppercase;font-size:20px;float:right;cursor:pointer;}
+#txtCaptcha {width:20%!important;}
+#contato-empresas div#imagemCaptchaVerify, #contato-grupo div#imagemCaptchaVerify {margin-right: 10px;float: right;overflow: hidden;}
+#contato-empresas img#imgCaptcha, #contato-grupo img#imgCaptcha { width: 115% !important;float:right;}
+.contato_alerta {float:left;margin-bottom:30px;text-align:right;width:100%;font-family:'din_black';text-transform:uppercase;color:#00374e;}
+
+/*.fundo_footer {background-image:url(../img/fundo_footer.png);background-size:100%;background-repeat:no-repeat;background-position:bottom;}*/
+
+/*VISÃO, MISSÃO E VALORES*/
+.visao {margin-bottom:6%;}
+.visao .esquerda {width:8%;float:left;margin-right:6%;}
+.visao .esquerda img {width:100%;}
+.visao .direita {width:85%;float:left;}
+.visao:last-child {margin-bottom:0;}
+#visao .content_box {width:70%;padding:30px 5%;margin:0 10% 50px;background-color:#f7f7f7;}
+#visao .content_blocos {display:flex;flex-wrap:wrap;margin:100px 0;}
+#visao .bloco {width:25.7%;margin-right:2%;border:1px solid #133348;float:left;padding:20px 3%;margin-bottom:25px;}
+#visao .bloco:nth-child(1) {width:93.3%;margin-right:0;}
+#visao .bloco:nth-child(4) {margin-right:0;}
+
+@media only screen and (max-width:1300px){
+	.icon-cinema {width:45px;margin-top:20px;}
+}
+
+
+/*NOVIDADE*/
+#novidade ul.novidade_lista {margin-top:3%;display:flex;flex-wrap:wrap;}
+#novidade h2.novidade_qtd {margin-top:0;}
+#novidade h3 {line-height:20px;font-size:20px;}
+#novidade p {color:#989898;font-size:14px;text-align:justify;}
+#novidade .novidade_lista li {float:left; width:32%;margin-right:1.5%; margin-bottom:50px;padding-bottom:30px;border-bottom:1px solid #ccc;}
+#novidade .novidade_lista li:nth-child(3n) {margin-right:0;}
+#novidade .novidade_lista li.active{width:100%; height:auto !important;background-color:#fff !important;}
+#novidade .img-close img {width:100%;}
+#novidade .img-close {display:block!important;}
+#novidade .img-open {display:none!important;}
+#novidade .active .img-close {display:none!important;}
+#novidade .active .img-open {display:block!important;text-align:center;}
+#novidade .info-novidade {width:90%;padding:5% 5% 0 0!important;height:auto!important;}
+#novidade li.active .info-novidade {background-color:#eee;margin-top:-6px;width:80%;padding:4% 10% !important;}
+#novidade .bg_branco.active {width:100%;padding:50px 0 0;}
+#novidade .novidade_lista li div{height:0; padding-bottom:47%; overflow:hidden;}
+#novidade .novidade_lista li.active div{height:auto; padding-bottom:0;}
+#novidade .leia_mais{cursor:pointer;text-decoration:underline;}
+#novidade .texto_completo{display:none;}
+#novidade .novidade_lista li.active {text-align:justify;}
+#novidade .novidade_lista li.active img {width:auto;margin-left:auto;margin-right:auto;}
+#novidade .novidade_lista li.active .texto_resumido{display:none;}
+#novidade .novidade_lista li.active .texto_completo{display:block;padding-bottom:50px;}		
+
+
+/*FOOTER*/
+.footer ul.solpanamby, .footer  ul.shoppings, .footer  ul.contatos {right:auto;width:auto;position:relative;}
+.content_footer {width:70%;margin-left:15%;}
+.logo_footer {width:100%;text-align:center;padding:12% 0 4% 0;display:none;}
+.logo_footer img {width:300px;}
+.footer { position: relative;  z-index: 9; background-repeat: no-repeat;padding:2% 0;background-color:#fefefe; }
+.footer:before {content:'';position:absolute;top:-30px;width:100%;height:50px;background-image:url(../img/detalhe_footer.png);background-repeat:no-repeat;background-position:center;}
+.footer form { overflow: hidden;  }
+.footer form  p  {  float: left; width: 175px; margin-right: 10px; }
+.footer form input[type=text],.footer form input[type=password] { width:250px;text-align:left; margin:10px 0; padding-left:20px; height: 40px; line-height: 40px; border-radius: 30px; border:none; background-color:#e2e2e2;text-transform:uppercase;}
+.footer form label { position: absolute; top: 11px;  margin-left: 15px;  color: #8a8a8a;}
+.footer .sociais * { vertical-align: middle; display: inline-block;  }
+.enderecos {width:100%;}
+.enderecos>div {width:30%;margin-right:4%;float:left;text-align:center;position:relative;}
+.enderecos>div:nth-child(3) {margin-right:0;}
+.enderecos img {max-width:60%;margin-bottom:20px;}
+.madnezz {color:#a9a9a9;text-decoration:underline;text-align:center;}	
+.footer h3 {font-size:23px;line-height:27px;color:#009d88;}	
+.footer .menu {margin-bottom:50px;}
+.footer .menu ul li a:hover {border:none;}
+.enderecos>div:after {content:'';width:5px;height:100px;position:absolute;top:20px;right:-30px;background-image:url(../img/detalhe_menu_footer.png);background-repeat:no-repeat;}
+.enderecos>div:nth-child(3):after {display:none;}
+.footer .esquerda {width:30%;float:left;margin-top:50px;}
+.footer .direita {width:50%;float:right;text-align:right;margin-top:85px;}
+ 
+.footer .imgCaptcha {  width: 175px; }
+.footer .step2 .captcha { float: left; margin-right: 3px; }
+.footer .step2  p { margin-right: 0px; }
+.footer .step2 .captcha * { display: inline-block; float: left; margin-bottom: 5px; }
+.footer .step2>*{ float: right; clear: both;  }
+.footer .newsletter p.pr { width: 160px; }
+.footer .step2 p { width: 82px; margin-right: 6px; }
+.footer .step2 p input[type=text] { text-indent: 10px; }
+.footer h1 {font-size:22px;}
+.footer .novidades {font-size:20px;}
+
+.footer .menu-small ul {float:none;}
+.footer .menu-small {text-align:center;width:100%;float:left;}
+
+
+/*LOJA*/
+@media only screen and (max-width:1800px){
+	.menu>ul>li {font-size:20px;}
+	.menu-small>ul>li {font-size:16px;}
+	.menu>ul>li a {padding-bottom:21px;}
+	.menu>ul>li>li a:hover:after {bottom:-35px;}
+	.banner_padrao p {font-size:29px!important;}
+	.bloco_verde h2 {font-size:37px!important;}
+	.bloco_verde h3 {font-size:28px!important;}
+	.galeria h1:before {width:32%!important;}
+	.galeria h1:after {width:32%!important;}
+	.titulo_principal h1:before {width:23%!important;}
+	.titulo_principal h1:after {width:23%!important;}
+}
+
+@media only screen and (max-width:1700px){
+	.menu>ul>li {font-size:18px;}
+	.menu-small>ul>li {font-size:14px;}
+	.menu>ul>li a {padding-bottom:16px;}
+	.menu>ul>li>li a:hover:after {bottom:-40px;}
+	.banner_padrao p {font-size:28px!important;line-height:35px!important;}
+	.bloco_verde h2 {font-size:32px!important;}
+	.bloco_verde h3 {font-size:24px!important;}
+	.galeria h1:before {width:30%!important;}
+	.galeria h1:after {width:30%!important;}
+	.titulo_principal h1:before {width:21%!important;}
+	.titulo_principal h1:after {width:21%!important;}
+}
+
+@media only screen and (max-width:1500px){
+	.menu>ul>li {font-size:16px;}
+	.menu-small>ul>li {font-size:13px;}
+	.banner_padrao p {font-size:20px!important;}
+	.bloco_verde { margin-top: -5%; }
+	.bloco_verde h2 {font-size:28px!important; line-height: 39px;}
+	.bloco_verde h3 {font-size:14px!important;}
+	.container_mapa {margin-top:-17%;}
+	.mapa {width:50%!important;}
+	.externo:after {right:5%!important;}
+	.menu>ul>li a {padding-bottom:11px!important;}
+	.menu>ul>li a:hover:after {bottom:-30px!important;}
+	.galeria h1:before {width:28%!important;}
+	.galeria h1:after {width:28%!important;}
+	.linha-do-tempo .direita {width:75%!important;}
+	.linha-do-tempo .duplo {width:60%!important;}
+	.novidades_home h3 {font-size:15px;line-height:16px;}
+	.mapa_araraquara {top:43%;}
+	.mapa_conceicao {top:52%;}
+	.mapa_indaiatuba {top:65%;}
+	.mapa_cenesp {top:70%;}
+}
+
+@media only screen and (max-width:1300px){
+	.menu>ul>li {font-size:15px;}
+	.menu-small>ul>li {font-size:13px;} 
+	.bloco_verde h2 {font-size:28px!important; line-height: 39px;}
+	.bloco_verde h3 {font-size:14px!important;}
+	.container_mapa {margin-top:-15%;}
+	.mapa {width:50%!important; margin-top: -3%}
+	.externo:after {right:5%!important;}
+	.menu>ul>li a {padding-bottom:8px!important;}
+	.menu>ul>li a:hover:after {bottom:-30px!important;}
+	.galeria h1:before {width:25%!important;}
+	.galeria h1:after {width:25%!important;}
+	.titulo_principal h1:before {width:18%!important;}
+	.titulo_principal h1:after {width:18%!important;}
+	.linha-do-tempo .direita {width:70%!important;}
+	.linha-do-tempo .duplo {width:60%!important;}
+}
+
+
+.menu_mobile {display:none;}
+.box_menu {display:none;}
+
+@media only screen and (max-width:1120px){
+				.container_mapa {margin-top:-5%;}
+				.menu-small {display:none;}
+				.menu_mobile {display:block;position:absolute;right:8%;top:0;}
+				.menu_mobile img {width:35px;}
+				.logo img {height:70%;margin-left:-10px;margin-top:20px;float:left;}
+				
+				.box_menu {display:block;width:80%;height:100%;padding:0 10% 10%;position:fixed;left:100%;background-color:#f8f8f8;z-index:9999;text-align:center;font-family:'NewsGothicBT';}
+				.box_menu ul {max-height:75%;overflow:auto;padding-bottom:10%;}
+				.box_menu ul li {font-size:26px;margin:40px 0;font-family:'din_black';text-transform:uppercase;}
+				.box_menu img {margin-top:5%;width:70%;}
+				.fechar {position:fixed;top:10px;right:20px;font-size:30px;color:#000;display:none;}
+				.fechar img {width:35px;float:right;margin-top:25px;margin-right:-5%;}
+				
+				.container_banner {width:93%!important;height:auto!important;left:3.5%!important;padding:0!important;}
+				.banner_padrao {width:90%!important;height:auto!important;padding:5%!important;}
+				.banner_home {width:100%!important;padding-bottom:68%!important;min-width:0!important;height:0;}
+				.banner_home a {width:100%!important;padding-bottom:68%!important;}
+				.banner_padrao p {font-size:24px!important;line-height:30px!important;}
+				.navbar {width:25%!important;bottom:17%!important;}
+				
+				.bloco_verde {max-width:70%!important;margin-left:10%!important;}
+				.bloco_verde h2 {font-size:34px!important;margin-top:50px!important;line-height:40px!important;}
+				.bloco_verde h3 {font-size:26px!important;margin-bottom:50px!important;line-height:30px!important;}
+				
+				.mapa {width:100%!important;margin-top:100px!important;height:auto!important;margin-bottom:50px;  }
+				.mapa_araraquara {width:10%;top:40%;}
+				.mapa_conceicao {width:10%;top:58%;}
+				.mapa_indaiatuba {width:10%;top:72%;}
+				.mapa_cenesp {width:10%;top:74%;}
+				
+				.descricao_araraquara, .descricao_cenesp, .descricao_conceicao, .descricao_indaiatuba {left:10%;width:80%;height:auto!important;position:relative!important;}
+				.descricao_araraquara p, .descricao_cenesp p, .descricao_conceicao p, .descricao_indaiatuba p {max-height:2000000px;overflow-y:auto;}
+				.mapa h3 {font-size:22px;margin-bottom:20px;line-height:30px;}
+				
+				.galeria h1 {font-size:40px!important;letter-spacing:-2px!important;display:inline-block;}
+				.galeria h1:before {left:-40%!important;}
+				.galeria h1:after {right:-40%!important;}
+				.fotos li {width:50%!important;}	
+				.fotos li img {width:100%!important;min-height:90px!important;}
+				
+				.titulo_principal h1 {font-size:40px!important;letter-spacing:-2px!important;display:inline-block;}
+				.titulo_principal h1:before {left:-40%!important;}
+				.titulo_principal h1:after {right:-40%!important;}
+				.titulo_principal h2 {font-size:18px!important;letter-spacing:3px!important;}
+				
+				#index .novidade_lista li {width:100%!important;margin-bottom:0!important;}
+				.fundo_footer {background-size:300%!important;}
+				.footer .menu {display:none;}
+				.enderecos>div {width:100%!important;margin:5% 0;}
+				.enderecos>div:after {display:none;}
+				.footer .esquerda {width:100%!important;float:none;text-align:center;}
+				.footer .esquerda img {margin-top:50px;}
+				.footer .direita {width:100%!important;float:none!important;text-align:center!important;margin:30px 0;}
+				
+				.conteudo {width:76%!important;margin-top:-8%!important;margin-left:7%!important;padding:10% 5%!important;}
+				
+				/*INSTITUCIONAL*/
+				.logos img {max-width:40%;margin:0 2% 40px 7%;}
+				
+				/*VISÃO*/
+				.visao .esquerda {width:20%!important;}
+				.visao .direita {width:100%!important;text-align:justify;}		
+				.visao .direita .h3 { font-size: 22px; line-height: 40px; }	
+				#visao .bloco {width:100%;margin-right:0;}	
+				#visao .content_box {width:90%;margin:50px 0 0 0;}
+				#visao .content_blocos {margin-top:50px;}
+				.submenu {display:none;padding-bottom:0!important;}
+				.submenu li a {color:#00a839;}			
+				#shopping .conteudo {width:86%!important;padding:0!important;}
+				#shopping .conteudo .esquerda {width:100%!important}
+				#shopping .conteudo .direita {width:100%!important;}
+				#shopping .conteudo .direita p {padding:0 0 0 10%!important;text-align:left!important;}
+				#shopping .cols1 {background-size:100%!important;}
+				#shopping .galeria {margin-top:50px;}
+				#shopping .galeria .fotos {margin: 0 0 40px 0 !important;}
+				#shopping .galeria .horarios {width:90%!important;}
+				#shopping .galeria p {font-size:14px!important;}				
+				.externo:after {right:0!important;}			
+					
+				.news {width:100%!important;}
+				.news .esquerda {width:100%!important;text-align:center!important;margin-top:50px;}
+				.news .form {width:90%!important;margin-left:5%!important;float:left;}
+				.news input[type="text"] {font-size:16px!important;}
+				.news .direita {width:90%!important;margin-left:5%!important;margin-top:50px;text-align:center;}
+				.news .direita img {width:47%;}
+				
+				#novidade .novidade_lista li {width:100%!important;height:450px!important;}
+				
+				#contato_form {width:90%!important;margin-top:30px auto!important;}
+				#contato_form input[type="text"], #contato_form textarea {width:90%;font-size:18px!important;padding:5%!important;}
+				#contato_form select {width:100%;font-size:18px!important;padding:5%!important;}
+				#contato-empresas div#imagemCaptchaVerify, #contato-grupo div#imagemCaptchaVerify {float:left!important;width:100%;text-align:right;}
+				#contato-empresas img#imgCaptcha, #contato-grupo img#imgCaptcha {width:70%!important;}
+				#captcha input[type="text"] {width:60%!important;}
+				.contato_alerta {margin-bottom:20!important;margin-top:20px;font-size:20px;}
+				
+				.segmentos .esquerda {width:95%!important;}
+				.segmentos .direita {width:95%!important;margin-bottom:50px;}
+				.segmentos .direita img, .segmentos .esquerda img {width:100%;}
+				.linha-do-tempo .direita {width:90%!important;}
+}
+
+
+@media (max-width: 1000px) and (orientation: landscape) {
+				.box_menu ul {max-height:40%;}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

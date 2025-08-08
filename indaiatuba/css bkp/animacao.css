@@ -1,0 +1,112 @@
+.skew {   
+	transform: skew(0deg, -14deg);
+	-moz-transform:  skew(0deg, -14deg);
+	-o-transform:  skew(0deg, -14deg);
+	-ms-transform:   skew(0deg, -14deg);   
+ -webkit-transform:   skew(0deg, -14deg); 
+ 
+	top: -1px; margin-top:-1px;/*EVITA SERRILHADO*/ 
+z-index:1;  
+	 
+} 
+
+.skew>div { margin-top: -1px; clear: both; }  
+
+
+.skew  .skew_in {
+	transform:   skew(0deg, 14deg) ;
+	-moz-transform:   skew(0deg, 14deg) ;
+	-o-transform:   skew(0deg, 14deg) ;
+	-ms-transform:   skew(0deg, 14deg) ;  
+	-webkit-transform:    skew(0deg, 14deg) ;   
+}
+ 
+.skew_bg { z-index:0 ; position: absolute; left:  0; top:0 ; width: 100%; height: 100%; background-size: cover; background-position: center; overflow: hidden; background-position: center;
+
+ -webkit-backface-visibility: initial;  /* Chrome, Safari, Opera */
+    backface-visibility: initial; 
+  
+ } 
+.skew_bg .bg { position: absolute; width: 100%; height: 100%; top: 0;   left: 0;  background-color: #333; margin-top: -240px; padding-bottom: 477px;background-position: center; background-repeat: no-repeat; background-size: cover; 
+	-webkit-transform: skew(0deg, 14deg);	
+	   -moz-transform: skew(0deg, 14deg);
+		-ms-transform: skew(0deg, 14deg);
+		 -o-transform: skew(0deg, 14deg);
+		    transform: skew(0deg, 14deg);    			
+}
+
+.skew_in > * { 
+ 	-webkit-transform: none;  
+       -moz-transform: none;  
+        -ms-transform: none;  
+         -o-transform: none;  
+            transform: none;
+			-webkit-backface-visibility: hidden;
+					backface-visibility: hidden;
+			text-rendering: optimizeLegibility;  
+			/* filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');*/
+			-webkit-perspective: 1;
+			-webkit-transform: translateZ(0);
+ }  
+ .optimize { 
+ 			image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+		    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+		    image-rendering: -o-crisp-edges;            /* Opera                          */
+		    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+		    image-rendering: pixelated; 				/* Chrome */
+		    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+		    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+		    
+} 
+
+.lista_img ul,.lista_v_img ul {   
+	-webkit-transition: all 200ms ease;
+	   -moz-transition: all 200ms ease;
+         -o-transition: all 200ms ease;
+            transition: all 200ms ease; 
+  }
+
+  .lista_img:hover  ul { 
+-webkit-transform:   scale(1.25);
+  -moz-transform:    scale(1.25);
+  -ms-transform:     scale(1.25);
+  -o-transform:      scale(1.25);
+  transform:         scale(1.25);   
+}
+/*LISTA*/
+.lista_img li {
+	border-radius: 50%;
+	-webkit-transition: all 400ms ease;
+	   -moz-transition: all 400ms ease;
+         -o-transition: all 400ms ease;
+            transition: all 400ms ease; 
+}
+
+.lista_img li { z-index: 1;
+-webkit-transform:   scale(0.8);
+  -moz-transform:    scale(0.8);
+  -ms-transform:     scale(0.8);
+  -o-transform:      scale(0.8);
+  transform:         scale(0.8);   
+ }
+.lista_img li.ativo{ opacity: 1; z-index: 999;
+-webkit-transform:   scale(1);
+  -moz-transform:    scale(1);
+  -ms-transform:     scale(1);
+  -o-transform:      scale(1);
+  transform:         scale(1);   
+ }
+
+ /*PARALAX*/
+ .parallax {
+ 		background-position: 50% 350px;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 118% !important;
+	/*
+	-webkit-transition: all 20ms linear;
+	   -moz-transition: all 20ms linear;
+         -o-transition: all 20ms linear;
+            transition: all 20ms linear; */
+ }
+ .bg_secundaria  .parallax { background-size: cover !important; }
